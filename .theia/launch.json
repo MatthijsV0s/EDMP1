@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "week1_variabeleknipper",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "week1_variabeleknipper",
+                "resourceId": "/week1_variabeleknipper"
+            }
+        }
+    ]
+}
