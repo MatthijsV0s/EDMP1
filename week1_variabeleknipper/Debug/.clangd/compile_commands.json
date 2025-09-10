@@ -1,0 +1,7 @@
+[
+   {
+      "directory" : "C:/Users/matth/source/repos/EDMP1/week1_variabeleknipper/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/source/repos/EDMP1/week1_variabeleknipper\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -xc",
+      "file"      : "C:/Users/matth/source/repos/EDMP1/week1_variabeleknipper/msp430fr59xx_1.c"
+   }
+]
