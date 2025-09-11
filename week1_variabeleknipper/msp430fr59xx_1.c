@@ -24,7 +24,10 @@ int main(void)
   while(1)
   {
     P1OUT ^= BIT0;                // Toggle LED
-    __delay_cycles(knipper_delay);
+    for(int i = 0; i < knipper_delay; i++){
+      __delay_cycles(1);
+    }
+    
     if (!((P1IN&0x02)&&(P4IN&0x20))){
       knipper_delay = 10000;
     }
