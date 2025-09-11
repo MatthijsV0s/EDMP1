@@ -23,7 +23,4 @@ OBJS__QUOTED += \
 C_DEPS__QUOTED += \
 "msp430fr59xx_1.d" 
 
-C_SRCS__QUOTED += \
-"../msp430fr59xx_1.c" 
-
 
