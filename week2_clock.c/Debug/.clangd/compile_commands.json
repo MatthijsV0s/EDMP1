@@ -1,0 +1,7 @@
+[
+   {
+      "directory" : "C:/Users/matth/source/repos/EDMP1/week2_clock.c/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/source/repos/EDMP1/week2_clock.c\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -xc",
+      "file"      : "C:/Users/matth/source/repos/EDMP1/week2_clock.c/msp430fr59xx_cs_01.c"
+   }
+]
