@@ -40,6 +40,15 @@
                 "name": "week2_oscillator.c",
                 "resourceId": "/week2_oscillator.c"
             }
+        },
+        {
+            "name": "week2_timer",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "week2_timer",
+                "resourceId": "/week2_timer"
+            }
         }
     ]
 }
