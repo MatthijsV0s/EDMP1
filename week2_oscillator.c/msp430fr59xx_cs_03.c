@@ -93,7 +93,7 @@ int main(void)
   // Clock System Setup
   CSCTL0_H = CSKEY >> 8;                    // Unlock CS registers
   CSCTL1 = DCOFSEL_0;                       // Set DCO to 1MHz
-  CSCTL2 = SELA__LFXTCLK | SELS__DCOCLK | SELM__DCOCLK;
+  CSCTL2 = SELA__LFXTCLK | SELS__LFXTCLK | SELM__LFXTCLK;
   CSCTL3 = DIVA__1 | DIVS__1 | DIVM__1;     // Set all dividers
   CSCTL4 &= ~LFXTOFF;
   do
@@ -104,7 +104,10 @@ int main(void)
 
   // Now that osc is running enable fault interrupt
   SFRIE1 |= OFIE;
-
+  while (1) {
+    P1OUT ^= 0x01;                          // Toggle LED
+    __delay_cycles(32768);                // Wait 1,000,000 CPU Cycles
+  }
   __bis_SR_register(LPM0_bits);             // Wait in LPM0 for fault flag
 }
 
