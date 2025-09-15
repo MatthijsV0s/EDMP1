@@ -22,6 +22,15 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "week2_clock.c",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "week2_clock.c",
+                "resourceId": "/week2_clock.c"
+            }
         }
     ]
 }

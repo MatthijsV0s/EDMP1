@@ -85,7 +85,7 @@ int main(void)
 
   // Clock System Setup
   CSCTL0_H = CSKEY >> 8;                    // Unlock CS registers
-  CSCTL1 = DCOFSEL_6;                       // Set DCO to 8MHz
+  CSCTL1 = DCOFSEL_0;                       // Set DCO to 8MHz //was 6
   CSCTL2 = SELA__VLOCLK | SELS__DCOCLK | SELM__DCOCLK;  // Set SMCLK = MCLK = DCO
                                             // ACLK = VLOCLK
   CSCTL3 = DIVA__1 | DIVS__1 | DIVM__1;     // Set all dividers to 1
@@ -93,6 +93,6 @@ int main(void)
     
   while (1) {
     P1OUT ^= 0x01;                          // Toggle LED
-    __delay_cycles(8000000);                // Wait 8,000,000 CPU Cycles
+    __delay_cycles(1000000);                // Wait 8,000,000 CPU Cycles
   }
 }
