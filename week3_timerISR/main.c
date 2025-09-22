@@ -33,4 +33,49 @@
 
 void main (void)
 {
+    WDTCTL = WDTPW | WDTHOLD;           //stop WDT
+
+    //P1.0
+    P1DIR |= BIT0;                      //set P1.0 as output
+    P1OUT &= ~BIT0;                      //clear output
+
+    PM5CTL0 &= ~LOCKLPM5;
+
+    // Clock System Setup
+    CSCTL0_H = CSKEY >> 8;                      // Unlock CS registers
+    CSCTL2 |= SELA__LFXTCLK;                    // Set ACLK to external 32768 Hz crystal
+    CSCTL3 |= DIVA__1;                          // Set prescaler to 1
+    CSCTL0_H = 0;                               // Lock CS registers
+
+    // Timer Setup
+    TA1CTL = TASSEL__ACLK | MC__CONTINOUS | TACLR | TAIE & ~TAIFG;  // Set ACLK as source, mode continuous, clear count, Interrupt enable, clear flag.
+    TA1CCTL2 = CCIE & ~CCIFG;                                       // Enable compare interrupt, clear flag.
+    TA1CCR2 = 32767;                                                 // Set compare value to 50%
+
+    __bis_SR_register(GIE);             // global interrupt enable
+    __bis_SR_register(LPM0_bits);       // enter LPM0
+    
+}
+#pragma vector=TIMER1_A0_VECTOR
+__interrupt void TA0_CCR0_ISR (void) {
+
+}
+
+#pragma vector=TIMER1_A1_VECTOR
+__interrupt void TA0_other_ISR (void) {
+    switch (__even_in_range(TA1IV, 10)){
+        case 0x00: break;       //None
+        case 0x02: break;       //CCR1 IFG
+        case 0x04:              //CCR2 IFG
+            P1OUT |= BIT0;
+            break;
+        case 0x06: break;       //CCR3 IFG
+        case 0x08: break;       //CCR4 IFG
+        case 0x0A: break;       //CCR5 IFG
+        case 0x0C: break;       //CCR6 IFG
+        case 0x0E:              //TA1IFG Overflow
+            P1OUT &= ~BIT0;
+            break;
+        default: _never_executed();
+    }
 }
