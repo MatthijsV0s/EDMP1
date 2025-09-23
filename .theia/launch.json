@@ -67,6 +67,15 @@
                 "name": "week3_timerISR",
                 "resourceId": "/week3_timerISR"
             }
+        },
+        {
+            "name": "week3_ADC",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "week3_ADC",
+                "resourceId": "/week3_ADC"
+            }
         }
     ]
 }
