@@ -76,6 +76,15 @@
                 "name": "week3_ADC",
                 "resourceId": "/week3_ADC"
             }
+        },
+        {
+            "name": "week3_ADCTimer",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "week3_ADCTimer",
+                "resourceId": "/week3_ADCTimer"
+            }
         }
     ]
 }
