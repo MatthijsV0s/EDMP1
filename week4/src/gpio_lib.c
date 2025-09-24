@@ -22,3 +22,24 @@ void pinConfigInput(uint16_t port, uint16_t bit, bool pullResistor, bool pullUP,
 void pinSetDir(uint16_t port, uint16_t bit, bool val){
     val ? (*(&P1DIR+port) |= bit) : (*(&P1DIR+port) &= ~bit);
 }
+
+void pinConfigFunction(uint16_t port, uint16_t bit, purposeFunction pf){
+    switch (pf){
+        case digital: 
+            (*(&P1SEL0+port) &= ~bit); 
+            (*(&P1SEL1+port) &= ~bit); 
+            break;
+        case primary: 
+            (*(&P1SEL0+port) |= bit); 
+            (*(&P1SEL1+port) &= ~bit); 
+            break;
+        case secondary: 
+            (*(&P1SEL0+port) &= ~bit); 
+            (*(&P1SEL1+port) |= bit); 
+            break;
+        case tertiary: 
+            (*(%P1SELC+port) |= bit); 
+            break;
+        default: break;
+    }
+}
