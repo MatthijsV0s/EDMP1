@@ -3,3 +3,7 @@
 void pinSet(uint16_t port, uint16_t bit, bool val){
     val ? (*(&0x0202+port) |= bit) : (*(&0x0202+port) &= ~bit);
 }
+
+void pinToggle(uint16_t port, uint16_t bit){
+    *(&0x0202+port) ^= bit;
+}
