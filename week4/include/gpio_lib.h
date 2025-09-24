@@ -25,7 +25,7 @@ typedef enum {
  *
  * @brief Sets an output to a pin.
  * @param[in] port: The port register address.
- * @param[in] pin:  The specific pin to toggle on that port.
+ * @param[in] bit:  The specific pin to toggle on that port.
  * @param[in] val:  The value that the pin gets.
  *
  */
@@ -35,7 +35,7 @@ void pinSet(uint16_t port, uint16_t bit, bool val);
  *
  * @brief Toggles a pin.
  * @param[in] port: The port register address.
- * @param[in] pin:  The specific pin to toggle on that port.
+ * @param[in] bit:  The specific pin to toggle on that port.
  *
  */
 void pinToggle(uint16_t port, uint16_t bit);
@@ -44,7 +44,7 @@ void pinToggle(uint16_t port, uint16_t bit);
  *
  * @brief Gets an value of a pin.
  * @param[in] port: The port register address.
- * @param[in] pin:  The specific pin to toggle on that port.
+ * @param[in] bit:  The specific pin to toggle on that port.
  * @returns The value of the pin.
  *
  */
@@ -54,7 +54,7 @@ bool pinGet(uint16_t port, uint16_t bit);
  * Sets all the input configurations of a pin except the direction and function of the pin.
  * @brief Sets the input configuration of a pin.
  * @param[in] port:         The port register address.
- * @param[in] pin:          The specific pin to toggle on that port.
+ * @param[in] bit:          The specific pin to toggle on that port.
  * @param[in] pullResistor: Indicates if the pin gets a pullresistor.
  * @param[in] pullUP:       Indicates which resistor the pin get: 1 Up/0 Down.
  * @param[in] IES:          Indicates on which edge an interrupt is triggerd.
@@ -67,7 +67,7 @@ void pinConfigInput(uint16_t port, uint16_t bit, bool pullResistor, bool pullUP,
  *
  * @brief Sets the direction of a pin.
  * @param[in] port: The port register address.
- * @param[in] pin:  The specific pin to toggle on that port.
+ * @param[in] bit:  The specific pin to toggle on that port.
  * @param[in] val:  The direction of the pin: 1 OUTPUT/0 INPUT.
  *
  */
@@ -77,7 +77,7 @@ void pinSetDir(uint16_t port, uint16_t bit, bool val);
  * Sets the function of a pin to Digital/Primary/Secondary/Teriary.
  * @brief Sets the function of a pin.
  * @param[in] port: The port register address.
- * @param[in] pin:  The specific pin to toggle on that port.
+ * @param[in] bit:  The specific pin to toggle on that port.
  * @param[in] pf:   The function of the pin.
  *
  */

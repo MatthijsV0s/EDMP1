@@ -115,23 +115,247 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae66a6b2ff7e28c7ad548379602587a37" id="r_ae66a6b2ff7e28c7ad548379602587a37"><td class="memItemLeft" align="right" valign="top"><a id="ae66a6b2ff7e28c7ad548379602587a37" name="ae66a6b2ff7e28c7ad548379602587a37"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pinSet</b> (uint16_t port, uint16_t bit, bool val)</td></tr>
-<tr class="memitem:a53002f7307d0d2722a9032eb77469871" id="r_a53002f7307d0d2722a9032eb77469871"><td class="memItemLeft" align="right" valign="top"><a id="a53002f7307d0d2722a9032eb77469871" name="a53002f7307d0d2722a9032eb77469871"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pinToggle</b> (uint16_t port, uint16_t bit)</td></tr>
-<tr class="memitem:a454fc0135c24c1a3b8f478946278ef13" id="r_a454fc0135c24c1a3b8f478946278ef13"><td class="memItemLeft" align="right" valign="top"><a id="a454fc0135c24c1a3b8f478946278ef13" name="a454fc0135c24c1a3b8f478946278ef13"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>pinGet</b> (uint16_t port, uint16_t bit)</td></tr>
-<tr class="memitem:a2970bbcc57434a957a66869351cad983" id="r_a2970bbcc57434a957a66869351cad983"><td class="memItemLeft" align="right" valign="top"><a id="a2970bbcc57434a957a66869351cad983" name="a2970bbcc57434a957a66869351cad983"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pinConfigInput</b> (uint16_t port, uint16_t bit, bool pullResistor, bool pullUP, bool IES, bool IE)</td></tr>
-<tr class="memitem:aaeccba8a92806e32ee1373a599f69245" id="r_aaeccba8a92806e32ee1373a599f69245"><td class="memItemLeft" align="right" valign="top"><a id="aaeccba8a92806e32ee1373a599f69245" name="aaeccba8a92806e32ee1373a599f69245"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pinSetDir</b> (uint16_t port, uint16_t bit, bool val)</td></tr>
-<tr class="memitem:a595cfd868c4e9e152315346bae7689f7" id="r_a595cfd868c4e9e152315346bae7689f7"><td class="memItemLeft" align="right" valign="top"><a id="a595cfd868c4e9e152315346bae7689f7" name="a595cfd868c4e9e152315346bae7689f7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>pinConfigFunction</b> (uint16_t port, uint16_t bit, purposeFunction pf)</td></tr>
+<tr class="memitem:ae66a6b2ff7e28c7ad548379602587a37" id="r_ae66a6b2ff7e28c7ad548379602587a37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66a6b2ff7e28c7ad548379602587a37">pinSet</a> (uint16_t port, uint16_t bit, bool val)</td></tr>
+<tr class="memdesc:ae66a6b2ff7e28c7ad548379602587a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an output to a pin.  <br /></td></tr>
+<tr class="memitem:a53002f7307d0d2722a9032eb77469871" id="r_a53002f7307d0d2722a9032eb77469871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53002f7307d0d2722a9032eb77469871">pinToggle</a> (uint16_t port, uint16_t bit)</td></tr>
+<tr class="memdesc:a53002f7307d0d2722a9032eb77469871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles a pin.  <br /></td></tr>
+<tr class="memitem:a454fc0135c24c1a3b8f478946278ef13" id="r_a454fc0135c24c1a3b8f478946278ef13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a454fc0135c24c1a3b8f478946278ef13">pinGet</a> (uint16_t port, uint16_t bit)</td></tr>
+<tr class="memdesc:a454fc0135c24c1a3b8f478946278ef13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an value of a pin.  <br /></td></tr>
+<tr class="memitem:a2970bbcc57434a957a66869351cad983" id="r_a2970bbcc57434a957a66869351cad983"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2970bbcc57434a957a66869351cad983">pinConfigInput</a> (uint16_t port, uint16_t bit, bool pullResistor, bool pullUP, bool IES, bool IE)</td></tr>
+<tr class="memdesc:a2970bbcc57434a957a66869351cad983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the input configuration of a pin.  <br /></td></tr>
+<tr class="memitem:aaeccba8a92806e32ee1373a599f69245" id="r_aaeccba8a92806e32ee1373a599f69245"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaeccba8a92806e32ee1373a599f69245">pinSetDir</a> (uint16_t port, uint16_t bit, bool val)</td></tr>
+<tr class="memdesc:aaeccba8a92806e32ee1373a599f69245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the direction of a pin.  <br /></td></tr>
+<tr class="memitem:a595cfd868c4e9e152315346bae7689f7" id="r_a595cfd868c4e9e152315346bae7689f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a595cfd868c4e9e152315346bae7689f7">pinConfigFunction</a> (uint16_t port, uint16_t bit, purposeFunction pf)</td></tr>
+<tr class="memdesc:a595cfd868c4e9e152315346bae7689f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the function of a pin.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="gpio__lib_8h.html">gpio_lib.h</a></p>
 <p>Created on: 23-09-2025 Author: M. Vos </p>
-</div></div><!-- contents -->
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a595cfd868c4e9e152315346bae7689f7" name="a595cfd868c4e9e152315346bae7689f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a595cfd868c4e9e152315346bae7689f7">&#9670;&#160;</a></span>pinConfigFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pinConfigFunction </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">purposeFunction</td>          <td class="paramname"><span class="paramname"><em>pf</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the function of a pin. </p>
+<p>Sets the function of a pin to Digital/Primary/Secondary/Teriary. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port register address. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>The specific pin to toggle on that port. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pf</td><td>The function of the pin. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2970bbcc57434a957a66869351cad983" name="a2970bbcc57434a957a66869351cad983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2970bbcc57434a957a66869351cad983">&#9670;&#160;</a></span>pinConfigInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pinConfigInput </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>pullResistor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>pullUP</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>IES</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>IE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the input configuration of a pin. </p>
+<p>Sets all the input configurations of a pin except the direction and function of the pin. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port register address. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>The specific pin to toggle on that port. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pullResistor</td><td>Indicates if the pin gets a pullresistor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pullUP</td><td>Indicates which resistor the pin get: 1 Up/0 Down. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">IES</td><td>Indicates on which edge an interrupt is triggerd. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">IE</td><td>Indicates if interrupt is enabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a454fc0135c24c1a3b8f478946278ef13" name="a454fc0135c24c1a3b8f478946278ef13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a454fc0135c24c1a3b8f478946278ef13">&#9670;&#160;</a></span>pinGet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pinGet </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets an value of a pin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port register address. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>The specific pin to toggle on that port. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value of the pin. </dd></dl>
+
+</div>
+</div>
+<a id="ae66a6b2ff7e28c7ad548379602587a37" name="ae66a6b2ff7e28c7ad548379602587a37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66a6b2ff7e28c7ad548379602587a37">&#9670;&#160;</a></span>pinSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pinSet </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>val</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets an output to a pin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port register address. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>The specific pin to toggle on that port. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>The value that the pin gets. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaeccba8a92806e32ee1373a599f69245" name="aaeccba8a92806e32ee1373a599f69245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeccba8a92806e32ee1373a599f69245">&#9670;&#160;</a></span>pinSetDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pinSetDir </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>val</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the direction of a pin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port register address. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>The specific pin to toggle on that port. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>The direction of the pin: 1 OUTPUT/0 INPUT. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a53002f7307d0d2722a9032eb77469871" name="a53002f7307d0d2722a9032eb77469871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53002f7307d0d2722a9032eb77469871">&#9670;&#160;</a></span>pinToggle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pinToggle </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>port</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>bit</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Toggles a pin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port register address. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>The specific pin to toggle on that port. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>
