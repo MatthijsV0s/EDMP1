@@ -18,3 +18,7 @@ void pinConfigInput(uint16_t port, uint16_t bit, bool pullResistor, bool pullUP,
     IES ? (*(&P1IES+port) |= bit) : (*(&P1IES+port) &= ~bit);
     IE ? (*(&P1IE+port) |= bit) : (*(&P1IE+port) &= ~bit);
 }
+
+void pinSetDir(uint16_t port, uint16_t bit, bool val){
+    val ? (*(&P1DIR+port) |= bit) : (*(&P1DIR+port) &= ~bit);
+}
