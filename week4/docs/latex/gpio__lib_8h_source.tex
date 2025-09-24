@@ -1,0 +1,31 @@
+\doxysection{gpio\+\_\+lib.\+h}
+\hypertarget{gpio__lib_8h_source}{}\label{gpio__lib_8h_source}\index{include/gpio\_lib.h@{include/gpio\_lib.h}}
+\mbox{\hyperlink{gpio__lib_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ GPIO\_LIB\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ GPIO\_LIB\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ PORT1\ 0x0000}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ PORT2\ 0x0001}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ PORT3\ 0x0020}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ PORT4\ 0x0021}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ digital,\ }
+\DoxyCodeLine{00019\ \ \ \ \ primary,\ }
+\DoxyCodeLine{00020\ \ \ \ \ secondary,\ }
+\DoxyCodeLine{00021\ \ \ \ \ tertiary}
+\DoxyCodeLine{00022\ \}\ purposeFunction;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ pinSet(uint16\_t\ port,\ uint16\_t\ bit,\ \textcolor{keywordtype}{bool}\ val);\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Set\ port.bit\ to\ val}}
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ pinToggle(uint16\_t\ port,\ uint16\_t\ bit);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Toggle\ port.bit}}
+\DoxyCodeLine{00026\ \textcolor{keywordtype}{bool}\ pinGet(uint16\_t\ port,\ uint16\_t\ bit);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Get\ digital\ value\ of\ port.bit}}
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{void}\ pinConfigInput(uint16\_t\ port,\ uint16\_t\ bit,\ \textcolor{keywordtype}{bool}\ pullResistor,\ \textcolor{keywordtype}{bool}\ pullUP,\ \textcolor{keywordtype}{bool}\ IES,\ \textcolor{keywordtype}{bool}\ IE);\ \ \ \ \textcolor{comment}{//\ Set\ pin\ configuration\ for\ port.bit}}
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{void}\ pinSetDir(uint16\_t\ port,\ uint16\_t\ bit,\ \textcolor{keywordtype}{bool}\ val);\ \ \ \ \ \ \textcolor{comment}{//\ Set\ direction\ of\ port.bit\ to\ val}}
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{void}\ pinConfigFunction(uint16\_t\ port,\ uint16\_t\ bit,\ purposeFunction\ pf);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ GPIO\_LIB\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

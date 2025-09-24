@@ -1,0 +1,54 @@
+\doxysection{include/gpio\+\_\+lib.h File Reference}
+\hypertarget{gpio__lib_8h}{}\label{gpio__lib_8h}\index{include/gpio\_lib.h@{include/gpio\_lib.h}}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{gpio__lib_8h_a83b698b796fa8d1625536439f28ea575}\label{gpio__lib_8h_a83b698b796fa8d1625536439f28ea575} 
+\#define {\bfseries PORT1}~0x0000
+\item 
+\Hypertarget{gpio__lib_8h_acb270e4aec8a0ab123e6c24a5810150b}\label{gpio__lib_8h_acb270e4aec8a0ab123e6c24a5810150b} 
+\#define {\bfseries PORT2}~0x0001
+\item 
+\Hypertarget{gpio__lib_8h_ad906b7f6a811f1f02b5eb04cbe1bc89b}\label{gpio__lib_8h_ad906b7f6a811f1f02b5eb04cbe1bc89b} 
+\#define {\bfseries PORT3}~0x0020
+\item 
+\Hypertarget{gpio__lib_8h_ad5a54f368997d8ae4f84a1e2fad533f4}\label{gpio__lib_8h_ad5a54f368997d8ae4f84a1e2fad533f4} 
+\#define {\bfseries PORT4}~0x0021
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{gpio__lib_8h_ae634b7f78550ab67cefb57cbc00f65a7}\label{gpio__lib_8h_ae634b7f78550ab67cefb57cbc00f65a7} 
+enum {\bfseries purpose\+Function} \{ {\bfseries digital}
+, {\bfseries primary}
+, {\bfseries secondary}
+, {\bfseries tertiary}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{gpio__lib_8h_ae66a6b2ff7e28c7ad548379602587a37}\label{gpio__lib_8h_ae66a6b2ff7e28c7ad548379602587a37} 
+void {\bfseries pin\+Set} (uint16\+\_\+t port, uint16\+\_\+t bit, bool val)
+\item 
+\Hypertarget{gpio__lib_8h_a53002f7307d0d2722a9032eb77469871}\label{gpio__lib_8h_a53002f7307d0d2722a9032eb77469871} 
+void {\bfseries pin\+Toggle} (uint16\+\_\+t port, uint16\+\_\+t bit)
+\item 
+\Hypertarget{gpio__lib_8h_a454fc0135c24c1a3b8f478946278ef13}\label{gpio__lib_8h_a454fc0135c24c1a3b8f478946278ef13} 
+bool {\bfseries pin\+Get} (uint16\+\_\+t port, uint16\+\_\+t bit)
+\item 
+\Hypertarget{gpio__lib_8h_a2970bbcc57434a957a66869351cad983}\label{gpio__lib_8h_a2970bbcc57434a957a66869351cad983} 
+void {\bfseries pin\+Config\+Input} (uint16\+\_\+t port, uint16\+\_\+t bit, bool pull\+Resistor, bool pull\+UP, bool IES, bool IE)
+\item 
+\Hypertarget{gpio__lib_8h_aaeccba8a92806e32ee1373a599f69245}\label{gpio__lib_8h_aaeccba8a92806e32ee1373a599f69245} 
+void {\bfseries pin\+Set\+Dir} (uint16\+\_\+t port, uint16\+\_\+t bit, bool val)
+\item 
+\Hypertarget{gpio__lib_8h_a595cfd868c4e9e152315346bae7689f7}\label{gpio__lib_8h_a595cfd868c4e9e152315346bae7689f7} 
+void {\bfseries pin\+Config\+Function} (uint16\+\_\+t port, uint16\+\_\+t bit, purpose\+Function pf)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{gpio__lib_8h}{gpio\+\_\+lib.\+h}
+
+Created on\+: 23-\/09-\/2025 Author\+: M. Vos 
