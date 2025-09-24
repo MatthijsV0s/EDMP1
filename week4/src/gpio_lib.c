@@ -1,9 +1,13 @@
 #include "...\include\gpio_lib.h"
 
 void pinSet(uint16_t port, uint16_t bit, bool val){
-    val ? (*(&0x0202+port) |= bit) : (*(&0x0202+port) &= ~bit);
+    val ? (*(&P1OUT+port) |= bit) : (*(&P1OUT+port) &= ~bit);
 }
 
 void pinToggle(uint16_t port, uint16_t bit){
-    *(&0x0202+port) ^= bit;
+    *(&P1OUT+port) ^= bit;
+}
+
+bool pinGet(uint16_t port, uint16_t bit){
+    return (*(&P1IN+port)&bit);
 }
