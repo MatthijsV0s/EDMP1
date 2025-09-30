@@ -7,30 +7,36 @@
 \DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ GPIO\_LIB\_H}}
 \DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ GPIO\_LIB\_H}}
 \DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ PORT1\ 0x0000}}
-\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ PORT2\ 0x0001}}
-\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ PORT3\ 0x0020}}
-\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ PORT4\ 0x0021}}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{}
-\DoxyCodeLine{00018\ \ \ \ \ digital,\ }
-\DoxyCodeLine{00019\ \ \ \ \ primary,\ }
-\DoxyCodeLine{00020\ \ \ \ \ secondary,\ }
-\DoxyCodeLine{00021\ \ \ \ \ tertiary}
-\DoxyCodeLine{00022\ \}\ purposeFunction;}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00032\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{gpio__lib_8h_ae66a6b2ff7e28c7ad548379602587a37}{pinSet}}(uint16\_t\ port,\ uint16\_t\ bit,\ \textcolor{keywordtype}{bool}\ val);}
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00041\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{gpio__lib_8h_a53002f7307d0d2722a9032eb77469871}{pinToggle}}(uint16\_t\ port,\ uint16\_t\ bit);}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00051\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{gpio__lib_8h_a454fc0135c24c1a3b8f478946278ef13}{pinGet}}(uint16\_t\ port,\ uint16\_t\ bit);}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00064\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{gpio__lib_8h_a2970bbcc57434a957a66869351cad983}{pinConfigInput}}(uint16\_t\ port,\ uint16\_t\ bit,\ \textcolor{keywordtype}{bool}\ pullResistor,\ \textcolor{keywordtype}{bool}\ pullUP,\ \textcolor{keywordtype}{bool}\ IES,\ \textcolor{keywordtype}{bool}\ IE);}
-\DoxyCodeLine{00065\ }
-\DoxyCodeLine{00074\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{gpio__lib_8h_aaeccba8a92806e32ee1373a599f69245}{pinSetDir}}(uint16\_t\ port,\ uint16\_t\ bit,\ \textcolor{keywordtype}{bool}\ val);}
-\DoxyCodeLine{00075\ }
-\DoxyCodeLine{00084\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{gpio__lib_8h_a595cfd868c4e9e152315346bae7689f7}{pinConfigFunction}}(uint16\_t\ port,\ uint16\_t\ bit,\ purposeFunction\ pf);}
-\DoxyCodeLine{00085\ }
-\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ GPIO\_LIB\_H\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <msp430.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ PORT1\ 0x0000}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ PORT2\ 0x0001}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ PORT3\ 0x0020}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ PORT4\ 0x0021}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ digital,\ }
+\DoxyCodeLine{00023\ \ \ \ \ primary,\ }
+\DoxyCodeLine{00024\ \ \ \ \ secondary,\ }
+\DoxyCodeLine{00025\ \ \ \ \ tertiary}
+\DoxyCodeLine{00026\ \}\ purposeFunction;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{gpio__lib_8h_ae66a6b2ff7e28c7ad548379602587a37}{pinSet}}(uint16\_t\ port,\ uint16\_t\ bit,\ \textcolor{keywordtype}{bool}\ val);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{gpio__lib_8h_a53002f7307d0d2722a9032eb77469871}{pinToggle}}(uint16\_t\ port,\ uint16\_t\ bit);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00055\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{gpio__lib_8h_a454fc0135c24c1a3b8f478946278ef13}{pinGet}}(uint16\_t\ port,\ uint16\_t\ bit);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00068\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{gpio__lib_8h_a5ea780811c0f8ee1d88206f9e6e99194}{pinConfigInput}}(uint16\_t\ port,\ uint16\_t\ bit,\ \textcolor{keywordtype}{bool}\ pullResistor,\ \textcolor{keywordtype}{bool}\ pullUp,\ \textcolor{keywordtype}{bool}\ IES,\ \textcolor{keywordtype}{bool}\ IE);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00078\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{gpio__lib_8h_aaeccba8a92806e32ee1373a599f69245}{pinSetDir}}(uint16\_t\ port,\ uint16\_t\ bit,\ \textcolor{keywordtype}{bool}\ val);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00088\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{gpio__lib_8h_a595cfd868c4e9e152315346bae7689f7}{pinConfigFunction}}(uint16\_t\ port,\ uint16\_t\ bit,\ purposeFunction\ pf);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00095\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{gpio__lib_8h_a7aaec489dca5ac4d278d2eb3ae38a2d2}{GPIO\_init}}();}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ GPIO\_LIB\_H\ */}\textcolor{preprocessor}{}}
 
 \end{DoxyCode}

@@ -1,5 +1,8 @@
 \doxysection{include/gpio\+\_\+lib.h File Reference}
 \hypertarget{gpio__lib_8h}{}\label{gpio__lib_8h}\index{include/gpio\_lib.h@{include/gpio\_lib.h}}
+{\ttfamily \#include $<$msp430.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
 \doxysubsubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
@@ -34,12 +37,15 @@ void \mbox{\hyperlink{gpio__lib_8h_a53002f7307d0d2722a9032eb77469871}{pin\+Toggl
 \begin{DoxyCompactList}\small\item\em Toggles a pin. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{gpio__lib_8h_a454fc0135c24c1a3b8f478946278ef13}{pin\+Get}} (uint16\+\_\+t port, uint16\+\_\+t bit)
 \begin{DoxyCompactList}\small\item\em Gets an value of a pin. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{gpio__lib_8h_a2970bbcc57434a957a66869351cad983}{pin\+Config\+Input}} (uint16\+\_\+t port, uint16\+\_\+t bit, bool pull\+Resistor, bool pull\+UP, bool IES, bool IE)
+void \mbox{\hyperlink{gpio__lib_8h_a5ea780811c0f8ee1d88206f9e6e99194}{pin\+Config\+Input}} (uint16\+\_\+t port, uint16\+\_\+t bit, bool pull\+Resistor, bool pull\+Up, bool IES, bool IE)
 \begin{DoxyCompactList}\small\item\em Sets the input configuration of a pin. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{gpio__lib_8h_aaeccba8a92806e32ee1373a599f69245}{pin\+Set\+Dir}} (uint16\+\_\+t port, uint16\+\_\+t bit, bool val)
 \begin{DoxyCompactList}\small\item\em Sets the direction of a pin. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{gpio__lib_8h_a595cfd868c4e9e152315346bae7689f7}{pin\+Config\+Function}} (uint16\+\_\+t port, uint16\+\_\+t bit, purpose\+Function pf)
-\begin{DoxyCompactList}\small\item\em Sets the function of a pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sets the function of a pin. \end{DoxyCompactList}\item 
+\Hypertarget{gpio__lib_8h_a7aaec489dca5ac4d278d2eb3ae38a2d2}\label{gpio__lib_8h_a7aaec489dca5ac4d278d2eb3ae38a2d2} 
+void {\bfseries GPIO\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em Enables the GPIO pins. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -64,16 +70,16 @@ Sets the function of a pin to Digital/\+Primary/\+Secondary/\+Teriary.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{in}}  & {\em port} & The port register address. \\
 \hline
-\mbox{\texttt{in}}  & {\em pin} & The specific pin to toggle on that port. \\
+\mbox{\texttt{in}}  & {\em bit} & The specific pin to toggle on that port. \\
 \hline
 \mbox{\texttt{in}}  & {\em pf} & The function of the pin. \\
 \hline
 \end{DoxyParams}
-\Hypertarget{gpio__lib_8h_a2970bbcc57434a957a66869351cad983}\index{gpio\_lib.h@{gpio\_lib.h}!pinConfigInput@{pinConfigInput}}
+\Hypertarget{gpio__lib_8h_a5ea780811c0f8ee1d88206f9e6e99194}\index{gpio\_lib.h@{gpio\_lib.h}!pinConfigInput@{pinConfigInput}}
 \index{pinConfigInput@{pinConfigInput}!gpio\_lib.h@{gpio\_lib.h}}
 \doxysubsubsection{\texorpdfstring{pinConfigInput()}{pinConfigInput()}}
-{\footnotesize\ttfamily \label{gpio__lib_8h_a2970bbcc57434a957a66869351cad983} 
-void pin\+Config\+Input (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{port}{, }\item[{uint16\+\_\+t}]{bit}{, }\item[{bool}]{pull\+Resistor}{, }\item[{bool}]{pull\+UP}{, }\item[{bool}]{IES}{, }\item[{bool}]{IE}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{gpio__lib_8h_a5ea780811c0f8ee1d88206f9e6e99194} 
+void pin\+Config\+Input (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{port}{, }\item[{uint16\+\_\+t}]{bit}{, }\item[{bool}]{pull\+Resistor}{, }\item[{bool}]{pull\+Up}{, }\item[{bool}]{IES}{, }\item[{bool}]{IE}{}\end{DoxyParamCaption})}
 
 
 
@@ -83,11 +89,11 @@ Sets all the input configurations of a pin except the direction and function of 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{in}}  & {\em port} & The port register address. \\
 \hline
-\mbox{\texttt{in}}  & {\em pin} & The specific pin to toggle on that port. \\
+\mbox{\texttt{in}}  & {\em bit} & The specific pin to toggle on that port. \\
 \hline
 \mbox{\texttt{in}}  & {\em pull\+Resistor} & Indicates if the pin gets a pullresistor. \\
 \hline
-\mbox{\texttt{in}}  & {\em pull\+UP} & Indicates which resistor the pin get\+: 1 Up/0 Down. \\
+\mbox{\texttt{in}}  & {\em pull\+Up} & Indicates which resistor the pin get\+: 1 Up/0 Down. \\
 \hline
 \mbox{\texttt{in}}  & {\em IES} & Indicates on which edge an interrupt is triggerd. \\
 \hline
@@ -108,7 +114,7 @@ Gets an value of a pin.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{in}}  & {\em port} & The port register address. \\
 \hline
-\mbox{\texttt{in}}  & {\em pin} & The specific pin to toggle on that port. \\
+\mbox{\texttt{in}}  & {\em bit} & The specific pin to toggle on that port. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -128,7 +134,7 @@ Sets an output to a pin.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{in}}  & {\em port} & The port register address. \\
 \hline
-\mbox{\texttt{in}}  & {\em pin} & The specific pin to toggle on that port. \\
+\mbox{\texttt{in}}  & {\em bit} & The specific pin to toggle on that port. \\
 \hline
 \mbox{\texttt{in}}  & {\em val} & The value that the pin gets. \\
 \hline
@@ -147,7 +153,7 @@ Sets the direction of a pin.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{in}}  & {\em port} & The port register address. \\
 \hline
-\mbox{\texttt{in}}  & {\em pin} & The specific pin to toggle on that port. \\
+\mbox{\texttt{in}}  & {\em bit} & The specific pin to toggle on that port. \\
 \hline
 \mbox{\texttt{in}}  & {\em val} & The direction of the pin\+: 1 OUTPUT/0 INPUT. \\
 \hline
@@ -166,6 +172,6 @@ Toggles a pin.
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{in}}  & {\em port} & The port register address. \\
 \hline
-\mbox{\texttt{in}}  & {\em pin} & The specific pin to toggle on that port. \\
+\mbox{\texttt{in}}  & {\em bit} & The specific pin to toggle on that port. \\
 \hline
 \end{DoxyParams}

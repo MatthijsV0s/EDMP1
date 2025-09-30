@@ -9,6 +9,10 @@
 #ifndef GPIO_LIB_H
 #define GPIO_LIB_H
 
+#include <msp430.h>
+#include <stdint.h>
+#include <stdbool.h>
+
 #define PORT1 0x0000
 #define PORT2 0x0001
 #define PORT3 0x0020
@@ -56,12 +60,12 @@ bool pinGet(uint16_t port, uint16_t bit);
  * @param[in] port:         The port register address.
  * @param[in] bit:          The specific pin to toggle on that port.
  * @param[in] pullResistor: Indicates if the pin gets a pullresistor.
- * @param[in] pullUP:       Indicates which resistor the pin get: 1 Up/0 Down.
+ * @param[in] pullUp:       Indicates which resistor the pin get: 1 Up/0 Down.
  * @param[in] IES:          Indicates on which edge an interrupt is triggerd.
  * @param[in] IE:           Indicates if interrupt is enabled.
  *
  */
-void pinConfigInput(uint16_t port, uint16_t bit, bool pullResistor, bool pullUP, bool IES, bool IE);
+void pinConfigInput(uint16_t port, uint16_t bit, bool pullResistor, bool pullUp, bool IES, bool IE);
 
 /**
  *
@@ -82,5 +86,12 @@ void pinSetDir(uint16_t port, uint16_t bit, bool val);
  *
  */
 void pinConfigFunction(uint16_t port, uint16_t bit, purposeFunction pf);
+
+/**
+ *
+ * @brief Enables the GPIO pins.
+ * 
+ */
+void GPIO_init();
 
 #endif /* GPIO_LIB_H */

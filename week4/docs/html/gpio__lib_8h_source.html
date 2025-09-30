@@ -96,37 +96,44 @@ $(function(){initNavTree('gpio__lib_8h_source.html','',''); });
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef GPIO_LIB_H</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define GPIO_LIB_H</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define PORT1 0x0000</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define PORT2 0x0001</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#define PORT3 0x0020</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define PORT4 0x0021</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    digital, </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    primary, </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    secondary, </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    tertiary</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} purposeFunction;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">void</span> <a class="code hl_function" href="gpio__lib_8h.html#ae66a6b2ff7e28c7ad548379602587a37">pinSet</a>(uint16_t port, uint16_t bit, <span class="keywordtype">bool</span> val);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">void</span> <a class="code hl_function" href="gpio__lib_8h.html#a53002f7307d0d2722a9032eb77469871">pinToggle</a>(uint16_t port, uint16_t bit);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">bool</span> <a class="code hl_function" href="gpio__lib_8h.html#a454fc0135c24c1a3b8f478946278ef13">pinGet</a>(uint16_t port, uint16_t bit);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">void</span> <a class="code hl_function" href="gpio__lib_8h.html#a2970bbcc57434a957a66869351cad983">pinConfigInput</a>(uint16_t port, uint16_t bit, <span class="keywordtype">bool</span> pullResistor, <span class="keywordtype">bool</span> pullUP, <span class="keywordtype">bool</span> IES, <span class="keywordtype">bool</span> IE);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordtype">void</span> <a class="code hl_function" href="gpio__lib_8h.html#aaeccba8a92806e32ee1373a599f69245">pinSetDir</a>(uint16_t port, uint16_t bit, <span class="keywordtype">bool</span> val);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keywordtype">void</span> <a class="code hl_function" href="gpio__lib_8h.html#a595cfd868c4e9e152315346bae7689f7">pinConfigFunction</a>(uint16_t port, uint16_t bit, purposeFunction pf);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#endif </span><span class="comment">/* GPIO_LIB_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="agpio__lib_8h_html_a2970bbcc57434a957a66869351cad983"><div class="ttname"><a href="gpio__lib_8h.html#a2970bbcc57434a957a66869351cad983">pinConfigInput</a></div><div class="ttdeci">void pinConfigInput(uint16_t port, uint16_t bit, bool pullResistor, bool pullUP, bool IES, bool IE)</div><div class="ttdoc">Sets the input configuration of a pin.</div><div class="ttdef"><b>Definition</b> gpio_lib.c:15</div></div>
-<div class="ttc" id="agpio__lib_8h_html_a454fc0135c24c1a3b8f478946278ef13"><div class="ttname"><a href="gpio__lib_8h.html#a454fc0135c24c1a3b8f478946278ef13">pinGet</a></div><div class="ttdeci">bool pinGet(uint16_t port, uint16_t bit)</div><div class="ttdoc">Gets an value of a pin.</div><div class="ttdef"><b>Definition</b> gpio_lib.c:11</div></div>
-<div class="ttc" id="agpio__lib_8h_html_a53002f7307d0d2722a9032eb77469871"><div class="ttname"><a href="gpio__lib_8h.html#a53002f7307d0d2722a9032eb77469871">pinToggle</a></div><div class="ttdeci">void pinToggle(uint16_t port, uint16_t bit)</div><div class="ttdoc">Toggles a pin.</div><div class="ttdef"><b>Definition</b> gpio_lib.c:7</div></div>
-<div class="ttc" id="agpio__lib_8h_html_a595cfd868c4e9e152315346bae7689f7"><div class="ttname"><a href="gpio__lib_8h.html#a595cfd868c4e9e152315346bae7689f7">pinConfigFunction</a></div><div class="ttdeci">void pinConfigFunction(uint16_t port, uint16_t bit, purposeFunction pf)</div><div class="ttdoc">Sets the function of a pin.</div><div class="ttdef"><b>Definition</b> gpio_lib.c:26</div></div>
-<div class="ttc" id="agpio__lib_8h_html_aaeccba8a92806e32ee1373a599f69245"><div class="ttname"><a href="gpio__lib_8h.html#aaeccba8a92806e32ee1373a599f69245">pinSetDir</a></div><div class="ttdeci">void pinSetDir(uint16_t port, uint16_t bit, bool val)</div><div class="ttdoc">Sets the direction of a pin.</div><div class="ttdef"><b>Definition</b> gpio_lib.c:22</div></div>
-<div class="ttc" id="agpio__lib_8h_html_ae66a6b2ff7e28c7ad548379602587a37"><div class="ttname"><a href="gpio__lib_8h.html#ae66a6b2ff7e28c7ad548379602587a37">pinSet</a></div><div class="ttdeci">void pinSet(uint16_t port, uint16_t bit, bool val)</div><div class="ttdoc">Sets an output to a pin.</div><div class="ttdef"><b>Definition</b> gpio_lib.c:3</div></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;msp430.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#define PORT1 0x0000</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#define PORT2 0x0001</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define PORT3 0x0020</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define PORT4 0x0021</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    digital, </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    primary, </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    secondary, </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    tertiary</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>} purposeFunction;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> <a class="code hl_function" href="gpio__lib_8h.html#ae66a6b2ff7e28c7ad548379602587a37">pinSet</a>(uint16_t port, uint16_t bit, <span class="keywordtype">bool</span> val);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keywordtype">void</span> <a class="code hl_function" href="gpio__lib_8h.html#a53002f7307d0d2722a9032eb77469871">pinToggle</a>(uint16_t port, uint16_t bit);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keywordtype">bool</span> <a class="code hl_function" href="gpio__lib_8h.html#a454fc0135c24c1a3b8f478946278ef13">pinGet</a>(uint16_t port, uint16_t bit);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keywordtype">void</span> <a class="code hl_function" href="gpio__lib_8h.html#a5ea780811c0f8ee1d88206f9e6e99194">pinConfigInput</a>(uint16_t port, uint16_t bit, <span class="keywordtype">bool</span> pullResistor, <span class="keywordtype">bool</span> pullUp, <span class="keywordtype">bool</span> IES, <span class="keywordtype">bool</span> IE);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keywordtype">void</span> <a class="code hl_function" href="gpio__lib_8h.html#aaeccba8a92806e32ee1373a599f69245">pinSetDir</a>(uint16_t port, uint16_t bit, <span class="keywordtype">bool</span> val);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keywordtype">void</span> <a class="code hl_function" href="gpio__lib_8h.html#a595cfd868c4e9e152315346bae7689f7">pinConfigFunction</a>(uint16_t port, uint16_t bit, purposeFunction pf);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keywordtype">void</span> <a class="code hl_function" href="gpio__lib_8h.html#a7aaec489dca5ac4d278d2eb3ae38a2d2">GPIO_init</a>();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#endif </span><span class="comment">/* GPIO_LIB_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="agpio__lib_8h_html_a454fc0135c24c1a3b8f478946278ef13"><div class="ttname"><a href="gpio__lib_8h.html#a454fc0135c24c1a3b8f478946278ef13">pinGet</a></div><div class="ttdeci">bool pinGet(uint16_t port, uint16_t bit)</div><div class="ttdoc">Gets an value of a pin.</div><div class="ttdef"><b>Definition</b> gpio_lib.c:12</div></div>
+<div class="ttc" id="agpio__lib_8h_html_a53002f7307d0d2722a9032eb77469871"><div class="ttname"><a href="gpio__lib_8h.html#a53002f7307d0d2722a9032eb77469871">pinToggle</a></div><div class="ttdeci">void pinToggle(uint16_t port, uint16_t bit)</div><div class="ttdoc">Toggles a pin.</div><div class="ttdef"><b>Definition</b> gpio_lib.c:8</div></div>
+<div class="ttc" id="agpio__lib_8h_html_a595cfd868c4e9e152315346bae7689f7"><div class="ttname"><a href="gpio__lib_8h.html#a595cfd868c4e9e152315346bae7689f7">pinConfigFunction</a></div><div class="ttdeci">void pinConfigFunction(uint16_t port, uint16_t bit, purposeFunction pf)</div><div class="ttdoc">Sets the function of a pin.</div><div class="ttdef"><b>Definition</b> gpio_lib.c:27</div></div>
+<div class="ttc" id="agpio__lib_8h_html_a5ea780811c0f8ee1d88206f9e6e99194"><div class="ttname"><a href="gpio__lib_8h.html#a5ea780811c0f8ee1d88206f9e6e99194">pinConfigInput</a></div><div class="ttdeci">void pinConfigInput(uint16_t port, uint16_t bit, bool pullResistor, bool pullUp, bool IES, bool IE)</div><div class="ttdoc">Sets the input configuration of a pin.</div><div class="ttdef"><b>Definition</b> gpio_lib.c:16</div></div>
+<div class="ttc" id="agpio__lib_8h_html_a7aaec489dca5ac4d278d2eb3ae38a2d2"><div class="ttname"><a href="gpio__lib_8h.html#a7aaec489dca5ac4d278d2eb3ae38a2d2">GPIO_init</a></div><div class="ttdeci">void GPIO_init()</div><div class="ttdoc">Enables the GPIO pins.</div><div class="ttdef"><b>Definition</b> gpio_lib.c:48</div></div>
+<div class="ttc" id="agpio__lib_8h_html_aaeccba8a92806e32ee1373a599f69245"><div class="ttname"><a href="gpio__lib_8h.html#aaeccba8a92806e32ee1373a599f69245">pinSetDir</a></div><div class="ttdeci">void pinSetDir(uint16_t port, uint16_t bit, bool val)</div><div class="ttdoc">Sets the direction of a pin.</div><div class="ttdef"><b>Definition</b> gpio_lib.c:23</div></div>
+<div class="ttc" id="agpio__lib_8h_html_ae66a6b2ff7e28c7ad548379602587a37"><div class="ttname"><a href="gpio__lib_8h.html#ae66a6b2ff7e28c7ad548379602587a37">pinSet</a></div><div class="ttdeci">void pinSet(uint16_t port, uint16_t bit, bool val)</div><div class="ttdoc">Sets an output to a pin.</div><div class="ttdef"><b>Definition</b> gpio_lib.c:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
