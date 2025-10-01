@@ -33,3 +33,10 @@ void setMatrix(bool val){
         }
     }
 }
+
+void setLedRow(int row, bool *val) {
+    if (row < 0 || row >= MATRIX_ROWS) return;  // Check if row is compatible value
+    for (int c = 0; c < MATRIX_COLS; c++) {
+        matrixState[row][c] = val[c];
+    }
+}

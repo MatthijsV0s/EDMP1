@@ -4,5 +4,6 @@ var led__matrix__lib_8h =
     [ "MatrixConfig", "struct_matrix_config.html", null ],
     [ "configLEDMatrix", "led__matrix__lib_8h.html#a211b33717a7cf58af1c76ec8497365e0", null ],
     [ "setLed", "led__matrix__lib_8h.html#ae1257054d74d81aa0f999776b29025f7", null ],
+    [ "setLedRow", "led__matrix__lib_8h.html#ad7419bf0e39e838f7d6908df33e0b1cd", null ],
     [ "setMatrix", "led__matrix__lib_8h.html#a7259372716456709bdef9d759ab290f0", null ]
 ];

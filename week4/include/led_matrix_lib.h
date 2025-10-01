@@ -44,7 +44,7 @@ void configLEDMatrix(IOPin *iolist);
  * @param[in] val:  The value the LED gets.
  *
  */
- void setLed(int row, int col, bool val);
+void setLed(int row, int col, bool val);
 
 /**
  *
@@ -52,6 +52,15 @@ void configLEDMatrix(IOPin *iolist);
  * @param[in] val:  The value the LED-Matrix gets.
  *
  */
- void setMatrix(bool val);
+void setMatrix(bool val);
+
+/**
+ *
+ * @brief Sets a whole row in the LED-Matrix.
+ * @param[in] row:  The row to set.
+ * @param[in] val:  The value the row gets.
+ *
+ */
+void setLedRow(int row, bool *val);
 
 #endif /* LED_MATRIX_LIB_H */
