@@ -72,4 +72,11 @@ void setLedRow(int row, bool *val);
  */
 void setLedCol(int col, bool *val);
 
+/**
+ *
+ * @brief Refreshes the LED-Matrix using Muliplexing.
+ *
+ */
+void refreshMatrix(void);
+
 #endif /* LED_MATRIX_LIB_H */

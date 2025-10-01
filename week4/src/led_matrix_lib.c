@@ -34,16 +34,31 @@ void setMatrix(bool val){
     }
 }
 
-void setLedRow(int row, bool *val) {
+void setLedRow(int row, bool *val){
     if (row < 0 || row >= MATRIX_ROWS) return;  // Check if row is compatible value
     for (int c = 0; c < MATRIX_COLS; c++) {
         matrixState[row][c] = val[c];
     }
 }
 
-void setLedCol(int col, bool *val) {
+void setLedCol(int col, bool *val){
     if (row < 0 || col >= MATRIX_COLS) return;  // Check if col is compatible value
     for (int r = 0; r < MATRIX_ROWS; r++) {
         matrixState[r][col] = val[r];
+    }
+}
+
+void refreshMatrix(void){
+    for (int r = 0; r < MATRIX_ROWS; r++){
+
+        pinSet(LEDMatrixConfig.rowPins[r].port, LEDMatrixConfig.rowPins[r].bit, true);
+
+        for (int c = 0; c < MATRIX_COLS; c++){
+            pinSet(LEDMatrixConfig.colPins[c].port, LEDMatrixConfig.colPins[c].bit, (matrixState[r][c] ? true : false));
+        }
+
+        __delay_cycles(1000);
+
+        pinSet(LEDMatrixConfig.rowPins[r].port, LEDMatrixConfig.rowPins[r].bit, false);
     }
 }
