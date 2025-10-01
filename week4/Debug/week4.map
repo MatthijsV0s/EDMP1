@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v21.6.1                     
 ******************************************************************************
->> Linked Tue Sep 30 14:36:30 2025
+>> Linked Wed Oct  1 11:01:53 2025
 
 OUTPUT FILE NAME:   <week4.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs_mpu"  address: 00004400
@@ -79,7 +79,7 @@ MEMORY CONFIGURATION
   INT53                 0000fffa   00000002  00000002  00000000  RWIX
   INT54                 0000fffc   00000002  00000002  00000000  RWIX
   RESET                 0000fffe   00000002  00000002  00000000  RWIX
-  FRAM2                 00010000   00003ff8  000000fe  00003efa  RWIX
+  FRAM2                 00010000   00003ff8  0000013a  00003ebe  RWIX
 
 
 SECTION ALLOCATION MAP
@@ -221,25 +221,24 @@ SYSNMI     0    0000fffc    00000002
 .reset     0    0000fffe    00000002     
                   0000fffe    00000002     rts430x_lc_rd_eabi.lib : boot.c.obj (.reset)
 
-.text      0    00010000    000000fe     
-                  00010000    00000054     main.obj (.text:main)
-                  00010054    00000046     gpio_lib.obj (.text:pinConfigInput)
-                  0001009a    0000002c     MSPMPU_INIT_LIB_CCS_msp430_large_code_restricted_data.lib : mpu_init.o (.text:__mpu_init)
-                  000100c6    00000010     gpio_lib.obj (.text:pinSet)
-                  000100d6    00000010     gpio_lib.obj (.text:pinSetDir)
-                  000100e6    0000000e     gpio_lib.obj (.text:pinGet)
-                  000100f4    00000006     rts430x_lc_rd_eabi.lib : exit.c.obj (.text:abort)
-                  000100fa    00000004                            : pre_init.c.obj (.text:_system_pre_init)
+.text      0    00010000    0000013a     
+                  00010000    000000de     main.obj (.text:main)
+                  000100de    0000002c     MSPMPU_INIT_LIB_CCS_msp430_large_code_restricted_data.lib : mpu_init.o (.text:__mpu_init)
+                  0001010a    00000010     gpio_lib.obj (.text:pinSet)
+                  0001011a    00000010     gpio_lib.obj (.text:pinSetDir)
+                  0001012a    00000006     gpio_lib.obj (.text:GPIO_init)
+                  00010130    00000006     rts430x_lc_rd_eabi.lib : exit.c.obj (.text:abort)
+                  00010136    00000004                            : pre_init.c.obj (.text:_system_pre_init)
 
 MODULE SUMMARY
 
        Module             code   ro data   rw data
        ------             ----   -------   -------
     .\src\
-       gpio_lib.obj       116    0         0      
-       main.obj           84     0         0      
+       main.obj           222    0         0      
+       gpio_lib.obj       38     0         0      
     +--+------------------+------+---------+---------+
-       Total:             200    0         0      
+       Total:             260    0         0      
                                                   
     C:\ti\ccs2020\ccs\ccs_base\msp430\lib\FR59xx\MSPMPU_INIT_LIB_CCS_msp430_large_code_restricted_data.lib
        mpu_init.o         44     0         0      
@@ -281,7 +280,7 @@ MODULE SUMMARY
                                                   
        Stack:             0      0         160    
     +--+------------------+------+---------+---------+
-       Grand Total:       286    52        160    
+       Grand Total:       346    52        160    
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
@@ -545,7 +544,7 @@ address   name
 000009ce  AESAXIN_L                 
 000004be  BCD2BIN                   
 000004bc  BIN2BCD                   
-000100f4  C$$EXIT                   
+00010130  C$$EXIT                   
 0000043e  CAPTIO0CTL                
 0000043f  CAPTIO0CTL_H              
 0000043e  CAPTIO0CTL_L              
@@ -642,6 +641,7 @@ address   name
 00000146  GCCTL1                    
 00000147  GCCTL1_H                  
 00000146  GCCTL1_L                  
+0001012a  GPIO_init                 
 000004c4  MAC                       
 000004da  MAC32H                    
 000004db  MAC32H_H                  
@@ -1104,12 +1104,12 @@ ffffffff  __TI_prof_data_size
 ffffffff  __TI_prof_data_start      
 ffffffff  __c_args__                
 00000001  __mpu_enable              
-0001009a  __mpu_init                
+000100de  __mpu_init                
 00004400  _c_int00_noinit_noargs_mpu
 0000fffe  _reset_vector             
 00002360  _stack                    
-000100fa  _system_pre_init          
-000100f4  abort                     
+00010136  _system_pre_init          
+00010130  abort                     
 00004400  fram_ipe_end              
 00004400  fram_ipe_start            
 00004400  fram_rw_start             
@@ -1119,10 +1119,8 @@ ffffffff  __c_args__
 00001513  mpu_sam_value             
 00000440  mpu_segment_border1       
 00000440  mpu_segment_border2       
-00010054  pinConfigInput            
-000100e6  pinGet                    
-000100c6  pinSet                    
-000100d6  pinSetDir                 
+0001010a  pinSet                    
+0001011a  pinSetDir                 
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -1952,17 +1950,16 @@ address   name
 0000fffc  __TI_int54                
 0000fffe  _reset_vector             
 00010000  main                      
-00010054  pinConfigInput            
-0001009a  __mpu_init                
-000100c6  pinSet                    
-000100d6  pinSetDir                 
-000100e6  pinGet                    
-000100f4  C$$EXIT                   
-000100f4  abort                     
-000100fa  _system_pre_init          
+000100de  __mpu_init                
+0001010a  pinSet                    
+0001011a  pinSetDir                 
+0001012a  GPIO_init                 
+00010130  C$$EXIT                   
+00010130  abort                     
+00010136  _system_pre_init          
 ffffffff  __TI_pprof_out_hndl       
 ffffffff  __TI_prof_data_size       
 ffffffff  __TI_prof_data_start      
 ffffffff  __c_args__                
 
-[835 symbols]
+[834 symbols]
