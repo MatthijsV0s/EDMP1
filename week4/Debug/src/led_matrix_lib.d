@@ -18,6 +18,8 @@ src/led_matrix_lib.obj: C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
 src/led_matrix_lib.obj: C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/machine/_stdint.h
 src/led_matrix_lib.obj: C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/sys/_stdint.h
 src/led_matrix_lib.obj: C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdbool.h
+src/led_matrix_lib.obj: C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdio.h
+src/led_matrix_lib.obj: C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdarg.h
 src/led_matrix_lib.obj: C:/Users/matth/source/repos/EDMP1/week4/include/gpio_lib.h
 
 ../src/led_matrix_lib.c:
@@ -55,6 +57,10 @@ C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/machine/_stdin
 C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/sys/_stdint.h:
 
 C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdbool.h:
+
+C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdio.h:
+
+C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdarg.h:
 
 C:/Users/matth/source/repos/EDMP1/week4/include/gpio_lib.h:
 

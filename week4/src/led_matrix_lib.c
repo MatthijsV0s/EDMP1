@@ -28,7 +28,7 @@ void setLed(int row, int col, bool val){
 
 void setMatrix(bool val){
     for (int r = 0; r < MATRIX_ROWS; r++){
-        for (inr c = 0; c < MATRIX_COLS; c++){
+        for (int c = 0; c < MATRIX_COLS; c++){
             matrixState[r][c] = val;
         }
     }
@@ -36,14 +36,14 @@ void setMatrix(bool val){
 
 void setLedRow(int row, bool *val){
     if (row < 0 || row >= MATRIX_ROWS) return;  // Check if row is compatible value
-    for (int c = 0; c < MATRIX_COLS; c++) {
+    for (int c = 0; c < MATRIX_COLS; c++){
         matrixState[row][c] = val[c];
     }
 }
 
 void setLedCol(int col, bool *val){
     if (row < 0 || col >= MATRIX_COLS) return;  // Check if col is compatible value
-    for (int r = 0; r < MATRIX_ROWS; r++) {
+    for (int r = 0; r < MATRIX_ROWS; r++){
         matrixState[r][col] = val[r];
     }
 }

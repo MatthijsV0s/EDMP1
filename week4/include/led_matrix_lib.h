@@ -10,8 +10,10 @@
 #define LED_MATRIX_LIB_H
 
 #include <msp430.h>
+
 #include <stdint.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 #include "gpio_lib.h"
 
