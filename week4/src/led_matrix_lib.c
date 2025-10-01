@@ -40,3 +40,10 @@ void setLedRow(int row, bool *val) {
         matrixState[row][c] = val[c];
     }
 }
+
+void setLedCol(int col, bool *val) {
+    if (row < 0 || col >= MATRIX_COLS) return;  // Check if col is compatible value
+    for (int r = 0; r < MATRIX_ROWS; r++) {
+        matrixState[r][col] = val[r];
+    }
+}

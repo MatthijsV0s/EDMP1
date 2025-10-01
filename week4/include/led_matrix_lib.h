@@ -63,4 +63,13 @@ void setMatrix(bool val);
  */
 void setLedRow(int row, bool *val);
 
+/**
+ *
+ * @brief Sets a whole collum in the LED-Matrix.
+ * @param[in] col:  The collum to set.
+ * @param[in] val:  The value the collum gets.
+ *
+ */
+void setLedCol(int col, bool *val);
+
 #endif /* LED_MATRIX_LIB_H */

@@ -30,7 +30,9 @@ void \mbox{\hyperlink{led__matrix__lib_8h_ae1257054d74d81aa0f999776b29025f7}{set
 void \mbox{\hyperlink{led__matrix__lib_8h_a7259372716456709bdef9d759ab290f0}{set\+Matrix}} (bool val)
 \begin{DoxyCompactList}\small\item\em Sets the whole LED-\/\+Matrix. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{led__matrix__lib_8h_ad7419bf0e39e838f7d6908df33e0b1cd}{set\+Led\+Row}} (int row, bool \texorpdfstring{$\ast$}{*}val)
-\begin{DoxyCompactList}\small\item\em Sets a whole row in the LED-\/\+Matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sets a whole row in the LED-\/\+Matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{led__matrix__lib_8h_a2035109730625cb7ab8e0295720a3a95}{set\+Led\+Col}} (int col, bool \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em Sets a whole collum in the LED-\/\+Matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -73,6 +75,23 @@ Sets a specific LED in the LED-\/\+Matrix.
 \mbox{\texttt{in}}  & {\em col} & The collum of the LED. \\
 \hline
 \mbox{\texttt{in}}  & {\em val} & The value the LED gets. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{led__matrix__lib_8h_a2035109730625cb7ab8e0295720a3a95}\index{led\_matrix\_lib.h@{led\_matrix\_lib.h}!setLedCol@{setLedCol}}
+\index{setLedCol@{setLedCol}!led\_matrix\_lib.h@{led\_matrix\_lib.h}}
+\doxysubsubsection{\texorpdfstring{setLedCol()}{setLedCol()}}
+{\footnotesize\ttfamily \label{led__matrix__lib_8h_a2035109730625cb7ab8e0295720a3a95} 
+void set\+Led\+Col (\begin{DoxyParamCaption}\item[{int}]{col}{, }\item[{bool \texorpdfstring{$\ast$}{*}}]{val}{}\end{DoxyParamCaption})}
+
+
+
+Sets a whole collum in the LED-\/\+Matrix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em col} & The collum to set. \\
+\hline
+\mbox{\texttt{in}}  & {\em val} & The value the collum gets. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{led__matrix__lib_8h_ad7419bf0e39e838f7d6908df33e0b1cd}\index{led\_matrix\_lib.h@{led\_matrix\_lib.h}!setLedRow@{setLedRow}}
