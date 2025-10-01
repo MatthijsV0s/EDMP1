@@ -26,7 +26,9 @@ struct \mbox{\hyperlink{struct_matrix_config}{Matrix\+Config}}
 void \mbox{\hyperlink{led__matrix__lib_8h_a211b33717a7cf58af1c76ec8497365e0}{config\+LEDMatrix}} (\mbox{\hyperlink{struct_i_o_pin}{IOPin}} \texorpdfstring{$\ast$}{*}iolist)
 \begin{DoxyCompactList}\small\item\em Configures the GPIO for the LED-\/\+Matrix. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{led__matrix__lib_8h_ae1257054d74d81aa0f999776b29025f7}{set\+Led}} (int row, int col, bool val)
-\begin{DoxyCompactList}\small\item\em Sets a specific LED in the LED-\/\+Matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Sets a specific LED in the LED-\/\+Matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{led__matrix__lib_8h_a7259372716456709bdef9d759ab290f0}{set\+Matrix}} (bool val)
+\begin{DoxyCompactList}\small\item\em Sets the whole LED-\/\+Matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -69,5 +71,20 @@ Sets a specific LED in the LED-\/\+Matrix.
 \mbox{\texttt{in}}  & {\em col} & The collum of the LED. \\
 \hline
 \mbox{\texttt{in}}  & {\em val} & The value the LED gets. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{led__matrix__lib_8h_a7259372716456709bdef9d759ab290f0}\index{led\_matrix\_lib.h@{led\_matrix\_lib.h}!setMatrix@{setMatrix}}
+\index{setMatrix@{setMatrix}!led\_matrix\_lib.h@{led\_matrix\_lib.h}}
+\doxysubsubsection{\texorpdfstring{setMatrix()}{setMatrix()}}
+{\footnotesize\ttfamily \label{led__matrix__lib_8h_a7259372716456709bdef9d759ab290f0} 
+void set\+Matrix (\begin{DoxyParamCaption}\item[{bool}]{val}{}\end{DoxyParamCaption})}
+
+
+
+Sets the whole LED-\/\+Matrix. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em val} & The value the LED-\/\+Matrix gets. \\
 \hline
 \end{DoxyParams}

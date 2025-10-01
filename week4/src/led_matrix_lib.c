@@ -25,3 +25,11 @@ void setLed(int row, int col, bool val){
     if (col < 0 || col >= MATRIX_COLS) return;  // Check if col is compatible value
     matrixState[row][col] = val;
 }
+
+void setMatrix(bool val){
+    for (int r = 0; r < MATRIX_ROWS; r++){
+        for (inr c = 0; c < MATRIX_COLS; c++){
+            matrixState[r][c] = val;
+        }
+    }
+}
