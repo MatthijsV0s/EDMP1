@@ -15,4 +15,19 @@
 
 #include "gpio_lib.h"
 
+#define MATRIX_ROWS 8
+#define MATRIX_COLS 8
+
+typedef struct{
+    uint16_t port;
+    uint16_t bit;
+} IOPin;
+
+typedef struct{
+    IOPin rowPins[MATRIX_ROWS];
+    IOPins colPins[MATRIX_COLS];
+} MatrixConfig;
+
+
+
 #endif /* LED_MATRIX_LIB_H */
