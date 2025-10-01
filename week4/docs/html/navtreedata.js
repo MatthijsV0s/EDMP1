@@ -25,6 +25,10 @@
 var NAVTREE =
 [
   [ "EDMP1 week4", "index.html", [
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ]
+    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
@@ -37,7 +41,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"dir_d44c64559bbebec7f509842c48db8b23.html"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

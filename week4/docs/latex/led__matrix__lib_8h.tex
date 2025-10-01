@@ -4,9 +4,49 @@
 {\ttfamily \#include $<$stdint.\+h$>$}\newline
 {\ttfamily \#include $<$stdbool.\+h$>$}\newline
 {\ttfamily \#include "{}gpio\+\_\+lib.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_i_o_pin}{IOPin}}
+\item 
+struct \mbox{\hyperlink{struct_matrix_config}{Matrix\+Config}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{led__matrix__lib_8h_a237af2b6cf547aaf4d0de5bc5a538672}\label{led__matrix__lib_8h_a237af2b6cf547aaf4d0de5bc5a538672} 
+\#define {\bfseries MATRIX\+\_\+\+ROWS}~8
+\item 
+\Hypertarget{led__matrix__lib_8h_a19d8c543f14d754cafd731d930bdc3a1}\label{led__matrix__lib_8h_a19d8c543f14d754cafd731d930bdc3a1} 
+\#define {\bfseries MATRIX\+\_\+\+COLS}~8
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{led__matrix__lib_8h_a211b33717a7cf58af1c76ec8497365e0}{config\+LEDMatrix}} (\mbox{\hyperlink{struct_i_o_pin}{IOPin}} \texorpdfstring{$\ast$}{*}iolist)
+\begin{DoxyCompactList}\small\item\em Configures the GPIO for the LED-\/\+Matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 \doxylink{led__matrix__lib_8h}{led\+\_\+matrix\+\_\+lib.\+h}
 
 Created on\+: 01-\/10-\/2025 Author\+: M. Vos 
+
+\label{doc-func-members}
+\Hypertarget{led__matrix__lib_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{led__matrix__lib_8h_a211b33717a7cf58af1c76ec8497365e0}\index{led\_matrix\_lib.h@{led\_matrix\_lib.h}!configLEDMatrix@{configLEDMatrix}}
+\index{configLEDMatrix@{configLEDMatrix}!led\_matrix\_lib.h@{led\_matrix\_lib.h}}
+\doxysubsubsection{\texorpdfstring{configLEDMatrix()}{configLEDMatrix()}}
+{\footnotesize\ttfamily \label{led__matrix__lib_8h_a211b33717a7cf58af1c76ec8497365e0} 
+void config\+LEDMatrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_o_pin}{IOPin}} \texorpdfstring{$\ast$}{*}}]{iolist}{}\end{DoxyParamCaption})}
+
+
+
+Configures the GPIO for the LED-\/\+Matrix. 
+
+This function configures the GPIO for the LED-\/\+Matrix using an iolist. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em iolist} & The list of pins used for the LED-\/\+Matrix. \\
+\hline
+\end{DoxyParams}

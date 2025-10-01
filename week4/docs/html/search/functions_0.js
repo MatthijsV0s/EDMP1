@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gpio_5finit_0',['GPIO_init',['../gpio__lib_8h.html#a7aaec489dca5ac4d278d2eb3ae38a2d2',1,'gpio_lib.c']]]
+  ['configledmatrix_0',['configLEDMatrix',['../led__matrix__lib_8h.html#a211b33717a7cf58af1c76ec8497365e0',1,'led_matrix_lib.c']]]
 ];

@@ -25,9 +25,15 @@ typedef struct{
 
 typedef struct{
     IOPin rowPins[MATRIX_ROWS];
-    IOPins colPins[MATRIX_COLS];
+    IOPin colPins[MATRIX_COLS];
 } MatrixConfig;
 
-
+/**
+ * This function configures the GPIO for the LED-Matrix using an iolist.
+ * @brief Configures the GPIO for the LED-Matrix.
+ * @param[in] iolist: The list of pins used for the LED-Matrix.
+ * 
+ */
+void configLEDMatrix(IOPin *iolist);
 
 #endif /* LED_MATRIX_LIB_H */

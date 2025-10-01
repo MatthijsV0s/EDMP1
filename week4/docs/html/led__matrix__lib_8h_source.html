@@ -102,8 +102,30 @@ $(function(){initNavTree('led__matrix__lib_8h_source.html','',''); });
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="gpio__lib_8h.html">gpio_lib.h</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif </span><span class="comment">/* LED_MATRIX_LIB_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define MATRIX_ROWS 8</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define MATRIX_COLS 8</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_i_o_pin.html">   21</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    uint16_t port;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    uint16_t bit;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>} <a class="code hl_struct" href="struct_i_o_pin.html">IOPin</a>;</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_matrix_config.html">   26</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_struct" href="struct_i_o_pin.html">IOPin</a> rowPins[MATRIX_ROWS];</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_struct" href="struct_i_o_pin.html">IOPin</a> colPins[MATRIX_COLS];</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} <a class="code hl_struct" href="struct_matrix_config.html">MatrixConfig</a>;</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">void</span> <a class="code hl_function" href="led__matrix__lib_8h.html#a211b33717a7cf58af1c76ec8497365e0">configLEDMatrix</a>(<a class="code hl_struct" href="struct_i_o_pin.html">IOPin</a> *iolist);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif </span><span class="comment">/* LED_MATRIX_LIB_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="agpio__lib_8h_html"><div class="ttname"><a href="gpio__lib_8h.html">gpio_lib.h</a></div></div>
+<div class="ttc" id="aled__matrix__lib_8h_html_a211b33717a7cf58af1c76ec8497365e0"><div class="ttname"><a href="led__matrix__lib_8h.html#a211b33717a7cf58af1c76ec8497365e0">configLEDMatrix</a></div><div class="ttdeci">void configLEDMatrix(IOPin *iolist)</div><div class="ttdoc">Configures the GPIO for the LED-Matrix.</div><div class="ttdef"><b>Definition</b> led_matrix_lib.c:6</div></div>
+<div class="ttc" id="astruct_i_o_pin_html"><div class="ttname"><a href="struct_i_o_pin.html">IOPin</a></div><div class="ttdef"><b>Definition</b> led_matrix_lib.h:21</div></div>
+<div class="ttc" id="astruct_matrix_config_html"><div class="ttname"><a href="struct_matrix_config.html">MatrixConfig</a></div><div class="ttdef"><b>Definition</b> led_matrix_lib.h:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
