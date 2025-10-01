@@ -23,7 +23,23 @@ int main(void){
     pinSetDir(PORT3, BIT5, 1);  // P3.5
     pinSetDir(PORT3, BIT6, 1);  // P3.6
 
-    
+    pinSet(PORT1, BIT2, 1);
+    pinSet(PORT3, BIT0, 0);
+    pinSet(PORT1, BIT6, 0);  
+    pinSet(PORT1, BIT7, 0);  
+    pinSet(PORT1, BIT5, 0);  
+    pinSet(PORT1, BIT4, 1);  
+    pinSet(PORT1, BIT3, 0);  
+    pinSet(PORT4, BIT2, 0);
+
+    pinSet(PORT2, BIT6, 0);
+    pinSet(PORT2, BIT5, 1);  
+    pinSet(PORT4, BIT3, 1);  
+    pinSet(PORT2, BIT4, 1);  
+    pinSet(PORT2, BIT2, 0);  
+    pinSet(PORT3, BIT4, 1);  
+    pinSet(PORT3, BIT5, 1);  
+    pinSet(PORT3, BIT6, 1);  
 
     while(1){
         
