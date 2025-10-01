@@ -19,3 +19,9 @@ void configLEDMatrix(IOPin *iolist){
 
     setMatrix(0);   // Empty Matrix
 }
+
+void setLed(int row, int col, bool val){
+    if (row < 0 || row >= MATRIX_ROWS) return;  // Check if row is compatible value
+    if (col < 0 || col >= MATRIX_COLS) return;  // Check if col is compatible value
+    matrixState[row][col] = val;
+}

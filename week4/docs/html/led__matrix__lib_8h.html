@@ -114,6 +114,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a211b33717a7cf58af1c76ec8497365e0" id="r_a211b33717a7cf58af1c76ec8497365e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a211b33717a7cf58af1c76ec8497365e0">configLEDMatrix</a> (<a class="el" href="struct_i_o_pin.html">IOPin</a> *iolist)</td></tr>
 <tr class="memdesc:a211b33717a7cf58af1c76ec8497365e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the GPIO for the LED-Matrix.  <br /></td></tr>
+<tr class="memitem:ae1257054d74d81aa0f999776b29025f7" id="r_ae1257054d74d81aa0f999776b29025f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1257054d74d81aa0f999776b29025f7">setLed</a> (int row, int col, bool val)</td></tr>
+<tr class="memdesc:ae1257054d74d81aa0f999776b29025f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a specific LED in the LED-Matrix.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="led__matrix__lib_8h.html">led_matrix_lib.h</a></p>
@@ -138,6 +140,42 @@ Functions</h2></td></tr>
 <p>This function configures the GPIO for the LED-Matrix using an iolist. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">iolist</td><td>The list of pins used for the LED-Matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae1257054d74d81aa0f999776b29025f7" name="ae1257054d74d81aa0f999776b29025f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1257054d74d81aa0f999776b29025f7">&#9670;&#160;</a></span>setLed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setLed </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>row</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>col</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>val</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a specific LED in the LED-Matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">row</td><td>The row of the LED. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">col</td><td>The collum of the LED. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>The value the LED gets. </td></tr>
   </table>
   </dd>
 </dl>

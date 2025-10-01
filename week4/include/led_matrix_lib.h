@@ -36,4 +36,14 @@ typedef struct{
  */
 void configLEDMatrix(IOPin *iolist);
 
+/**
+ *
+ * @brief Sets a specific LED in the LED-Matrix.
+ * @param[in] row:  The row of the LED.
+ * @param[in] col:  The collum of the LED.
+ * @param[in] val:  The value the LED gets.
+ *
+ */
+ void setLed(int row, int col, bool val);
+
 #endif /* LED_MATRIX_LIB_H */

@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "cgilmp",
+  0: "cgilmps",
   1: "im",
   2: "gl",
-  3: "cgp"
+  3: "cgps"
 };
 
 var indexSectionNames =
