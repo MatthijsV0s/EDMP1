@@ -1,4 +1,5 @@
 "./src/gpio_lib.obj"
+"./src/led_matrix_lib.obj"
 "./src/main.obj"
 "../lnk_msp430fr5969.cmd"
 -llibmpu_init.a
