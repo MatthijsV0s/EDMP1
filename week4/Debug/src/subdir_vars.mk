@@ -32,7 +32,6 @@ C_DEPS__QUOTED += \
 
 C_SRCS__QUOTED += \
 "../src/gpio_lib.c" \
-"../src/led_matrix_lib.c" \
-"../src/main.c" 
+"../src/led_matrix_lib.c" 
 
 

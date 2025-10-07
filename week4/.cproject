@@ -27,7 +27,7 @@
                             </option>
                             <option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1636703766" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="21.6.1.LTS" valueType="string"/>
                             <targetPlatform id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.targetPlatformDebug.1304662081" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.targetPlatformDebug"/>
-                            <builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.builderDebug.805195455" name="GNU Make.Debug" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.builderDebug"/>
+                            <builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.builderDebug.805195455" keepEnvironmentInBuildfile="false" name="GNU Make" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.builderDebug"/>
                             <tool id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.compilerDebug.518607826" name="MSP430 Compiler" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.compilerDebug">
                                 <option id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.DEFINE.335476336" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.DEFINE" valueType="definedSymbols">
                                     <listOptionValue value="__MSP430FR5969__"/>
@@ -55,6 +55,10 @@
                                     <listOptionValue value="${CG_TOOL_ROOT}/include"/>
                                 </option>
                                 <option id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.ADVICE__POWER.1993016712" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.ADVICE__POWER" value="&quot;none&quot;" valueType="string"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.C_DIALECT.62277948" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.C_DIALECT" value="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.C_DIALECT.C99" valueType="enumerated"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.OTHER_FLAGS.1864856552" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.OTHER_FLAGS" valueType="stringList">
+                                    <listOptionValue value=""/>
+                                </option>
                             </tool>
                             <tool id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.linkerDebug.1157524642" name="MSP430 Linker" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.linkerDebug">
                                 <option id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.linkerID.LIBRARY.1665527305" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.linkerID.LIBRARY" valueType="libs">
@@ -89,6 +93,14 @@
                             </tool>
                         </toolChain>
                     </folderInfo>
+                    <fileInfo id="com.ti.ccstudio.buildDefinitions.MSP430.Debug.1807830878.src/main.c" name="main.c" rcbsApplicability="disable" resourcePath="src/main.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.compilerDebug.518607826.565550003">
+                        <tool id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.compilerDebug.518607826.565550003" name="MSP430 Compiler" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.exe.compilerDebug.518607826">
+                            <option id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.C_DIALECT.1880615183" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.C_DIALECT" value="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.C_DIALECT.C99" valueType="enumerated"/>
+                            <option id="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.OTHER_FLAGS.676196421" superClass="com.ti.ccstudio.buildDefinitions.MSP430_21.6.compilerID.OTHER_FLAGS" valueType="stringList">
+                                <listOptionValue value=""/>
+                            </option>
+                        </tool>
+                    </fileInfo>
                 </configuration>
             </storageModule>
             <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
