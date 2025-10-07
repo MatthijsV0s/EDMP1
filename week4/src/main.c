@@ -21,8 +21,9 @@ int main(void) {
     pinConfigInput(PORT1, BIT1, true, true, false, false);
 
     configLEDMatrix(iolist);
-    bool rij[8] = {0,1,1,0,1,0,1,0};
+    bool rij[8] = {1,1,1,1,1,1,1,1};
     int LED = 00;
+    int ROW = 0;
 
     //setLed(0,0,true);
     //setLed(6,7,true);
@@ -32,7 +33,7 @@ int main(void) {
 
     while(1){
         refreshMatrix();
-        switch (LED){
+/*        switch (LED){                       // Opdracht 25
             case 00: 
                 setMatrix(false);
                 setLed(0,0,true);
@@ -543,6 +544,73 @@ int main(void) {
                 if(pinGet(PORT1, BIT1)==0){
                     LED = 00;
                     __delay_cycles(1000000);
+                }
+                break;
+            default: break;
+        }*/
+        switch (ROW){
+            case 0:
+                setLedRow(0, rij);
+                if (pinGet(PORT1, BIT1)==0){
+                    setMatrix(false);
+                    __delay_cycles(300000);
+                    ROW = 1;
+                }
+                break;
+            case 1:
+                setLedRow(1, rij);
+                if (pinGet(PORT1, BIT1)==0){
+                    setMatrix(false);
+                    __delay_cycles(300000);
+                    ROW = 2;
+                }
+                break;
+            case 2:
+                setLedRow(2, rij);
+                if (pinGet(PORT1, BIT1)==0){
+                    setMatrix(false);
+                    __delay_cycles(300000);
+                    ROW = 3;
+                }
+                break;
+            case 3:
+                setLedRow(3, rij);
+                if (pinGet(PORT1, BIT1)==0){
+                    setMatrix(false);
+                    __delay_cycles(300000);
+                    ROW = 4;
+                }
+                break;
+            case 4:
+                setLedRow(4, rij);
+                if (pinGet(PORT1, BIT1)==0){
+                    setMatrix(false);
+                    __delay_cycles(300000);
+                    ROW = 5;
+                }
+                break;
+            case 5:
+                setLedRow(5, rij);
+                if (pinGet(PORT1, BIT1)==0){
+                    setMatrix(false);
+                    __delay_cycles(300000);
+                    ROW = 6;
+                }
+                break;
+            case 6:
+                setLedRow(6, rij);
+                if (pinGet(PORT1, BIT1)==0){
+                    setMatrix(false);
+                    __delay_cycles(300000);
+                    ROW = 7;
+                }
+                break;
+            case 7:
+                setLedRow(7, rij);
+                if (pinGet(PORT1, BIT1)==0){
+                    setMatrix(false);
+                    __delay_cycles(300000);
+                    ROW = 0;
                 }
                 break;
             default: break;
