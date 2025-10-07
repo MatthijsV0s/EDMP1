@@ -1,6 +1,7 @@
 #include <msp430.h>
 #include "C:\Users\matth\source\repos\EDMP1\week4\include\gpio_lib.h"
 #include "C:\Users\matth\source\repos\EDMP1\week4\include\led_matrix_lib.h"
+#include "C:\Users\matth\source\repos\EDMP1\week4\include\button_matrix_lib.h"
 
 int main(void) {
     
