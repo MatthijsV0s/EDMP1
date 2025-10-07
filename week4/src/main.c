@@ -8,7 +8,7 @@ int main(void) {
 
     GPIO_init();
 
-    IOPin iolist[MATRIX_ROWS + MATRIX_COLS] = {
+    IOPin iolist_Led[MATRIX_ROWS + MATRIX_COLS] = {
         /* Rows */
         {PORT1, BIT2}, {PORT3, BIT0}, {PORT1, BIT6}, {PORT1, BIT7},
         {PORT1, BIT5}, {PORT1, BIT4}, {PORT1, BIT3}, {PORT4, BIT2},
@@ -20,7 +20,7 @@ int main(void) {
     pinSetDir(PORT1, BIT1, 0);
     pinConfigInput(PORT1, BIT1, true, true, false, false);
 
-    configLEDMatrix(iolist);
+    configLEDMatrix(iolist_Led);
     bool rij[8] = {1,1,1,1,1,1,1,1};
     int LED = 00;
     int ROW = 0;
@@ -548,7 +548,7 @@ int main(void) {
                 break;
             default: break;
         }*/
-        switch (ROW){
+/*        switch (ROW){                       // Opdracht 26
             case 0:
                 setLedRow(0, rij);
                 if (pinGet(PORT1, BIT1)==0){
@@ -614,6 +614,6 @@ int main(void) {
                 }
                 break;
             default: break;
-        }
+        }*/
     }
 }
