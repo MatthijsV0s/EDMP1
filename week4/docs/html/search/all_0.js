@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['configledmatrix_0',['configLEDMatrix',['../led__matrix__lib_8h.html#a211b33717a7cf58af1c76ec8497365e0',1,'led_matrix_lib.c']]]
+  ['button_5fmatrix_5flib_2eh_0',['button_matrix_lib.h',['../button__matrix__lib_8h.html',1,'']]]
 ];

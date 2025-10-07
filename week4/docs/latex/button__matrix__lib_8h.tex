@@ -1,0 +1,47 @@
+\doxysection{include/button\+\_\+matrix\+\_\+lib.h File Reference}
+\hypertarget{button__matrix__lib_8h}{}\label{button__matrix__lib_8h}\index{include/button\_matrix\_lib.h@{include/button\_matrix\_lib.h}}
+{\ttfamily \#include $<$msp430.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}gpio\+\_\+lib.\+h"{}}\newline
+{\ttfamily \#include "{}led\+\_\+matrix\+\_\+lib.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{button__matrix__lib_8h_a1c1bd8eae6f7858261e0ba56a0d98eab}\label{button__matrix__lib_8h_a1c1bd8eae6f7858261e0ba56a0d98eab} 
+\#define {\bfseries B\+\_\+\+MATRIX\+\_\+\+ROWS}~4
+\item 
+\Hypertarget{button__matrix__lib_8h_afc3186d363b63fc0624114c72532f643}\label{button__matrix__lib_8h_afc3186d363b63fc0624114c72532f643} 
+\#define {\bfseries B\+\_\+\+MATRIX\+\_\+\+COLS}~4
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{button__matrix__lib_8h_a1cc8a23f1ef215eb861905828a0eb5c1}{config\+Button\+Matrix}} (\mbox{\hyperlink{struct_i_o_pin}{IOPin}} \texorpdfstring{$\ast$}{*}iolist)
+\begin{DoxyCompactList}\small\item\em Configures the GPIO for the Button-\/\+Matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{button__matrix__lib_8h}{button\+\_\+matrix\+\_\+lib.\+h}
+
+Created on\+: 07-\/10-\/2025 Author\+: M. Vos 
+
+\label{doc-func-members}
+\Hypertarget{button__matrix__lib_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{button__matrix__lib_8h_a1cc8a23f1ef215eb861905828a0eb5c1}\index{button\_matrix\_lib.h@{button\_matrix\_lib.h}!configButtonMatrix@{configButtonMatrix}}
+\index{configButtonMatrix@{configButtonMatrix}!button\_matrix\_lib.h@{button\_matrix\_lib.h}}
+\doxysubsubsection{\texorpdfstring{configButtonMatrix()}{configButtonMatrix()}}
+{\footnotesize\ttfamily \label{button__matrix__lib_8h_a1cc8a23f1ef215eb861905828a0eb5c1} 
+void config\+Button\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_o_pin}{IOPin}} \texorpdfstring{$\ast$}{*}}]{iolist}{}\end{DoxyParamCaption})}
+
+
+
+Configures the GPIO for the Button-\/\+Matrix. 
+
+This function configures the GPIO for the Button-\/\+Matrix using an iolist. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em iolist} & The list of pins used for the Button-\/\+Matrix. \\
+\hline
+\end{DoxyParams}
