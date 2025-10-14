@@ -1,3 +1,4 @@
+"./src/button_matrix_lib.obj"
 "./src/gpio_lib.obj"
 "./src/led_matrix_lib.obj"
 "./src/main.obj"

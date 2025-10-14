@@ -10,6 +10,7 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
+"./src/button_matrix_lib.obj" \
 "./src/gpio_lib.obj" \
 "./src/led_matrix_lib.obj" \
 "./src/main.obj" \
@@ -147,8 +148,8 @@ week4.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "src\gpio_lib.obj" "src\led_matrix_lib.obj" "src\main.obj" 
-	-$(RM) "src\gpio_lib.d" "src\led_matrix_lib.d" "src\main.d" 
+	-$(RM) "src\button_matrix_lib.obj" "src\gpio_lib.obj" "src\led_matrix_lib.obj" "src\main.obj" 
+	-$(RM) "src\button_matrix_lib.d" "src\gpio_lib.d" "src\led_matrix_lib.d" "src\main.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

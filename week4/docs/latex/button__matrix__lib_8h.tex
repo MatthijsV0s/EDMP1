@@ -19,7 +19,9 @@
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{button__matrix__lib_8h_a1cc8a23f1ef215eb861905828a0eb5c1}{config\+Button\+Matrix}} (\mbox{\hyperlink{struct_i_o_pin}{IOPin}} \texorpdfstring{$\ast$}{*}iolist)
-\begin{DoxyCompactList}\small\item\em Configures the GPIO for the Button-\/\+Matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Configures the GPIO for the Button-\/\+Matrix. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{button__matrix__lib_8h_a9e0f2167c9fdee5c6af27ac11fd72c01}{get\+Button}} (void)
+\begin{DoxyCompactList}\small\item\em Gets the button pushed in the Matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -40,8 +42,21 @@ void config\+Button\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{str
 
 Configures the GPIO for the Button-\/\+Matrix. 
 
-This function configures the GPIO for the Button-\/\+Matrix using an iolist. 
+This function configures the GPIO for the Button-\/\+Matrix using an iolist, and enables global interrupt, 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\texttt{in}}  & {\em iolist} & The list of pins used for the Button-\/\+Matrix. \\
 \hline
 \end{DoxyParams}
+\Hypertarget{button__matrix__lib_8h_a9e0f2167c9fdee5c6af27ac11fd72c01}\index{button\_matrix\_lib.h@{button\_matrix\_lib.h}!getButton@{getButton}}
+\index{getButton@{getButton}!button\_matrix\_lib.h@{button\_matrix\_lib.h}}
+\doxysubsubsection{\texorpdfstring{getButton()}{getButton()}}
+{\footnotesize\ttfamily \label{button__matrix__lib_8h_a9e0f2167c9fdee5c6af27ac11fd72c01} 
+int get\+Button (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the button pushed in the Matrix. 
+
+This function checks per row if an interrupt is generated at a collum, and returns which row and which collum the interrupt was generated. \begin{DoxyReturn}{Returns}
+The button pushed in the Matrix. 
+\end{DoxyReturn}

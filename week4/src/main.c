@@ -18,13 +18,21 @@ int main(void) {
         {PORT2, BIT2}, {PORT3, BIT4}, {PORT3, BIT5}, {PORT3, BIT6}
     };
 
-    pinSetDir(PORT1, BIT1, 0);
-    pinConfigInput(PORT1, BIT1, true, true, false, false);
+    IOPin iolist_Button[B_MATRIX_ROWS + B_MATRIX_COLS] = {
+        /* Rows */
+        {PORT2, BIT2}, {PORT3, BIT4}, {PORT3, BIT5}, {PORT3, BIT6},
+        /* Collums */
+        {PORT1, BIT3}, {PORT1, BIT4}, {PORT1, BIT5}, {PORT1, BIT7}
+    };
 
-    configLEDMatrix(iolist_Led);
-    bool rij[8] = {1,1,1,1,1,1,1,1};
-    int LED = 00;
-    int ROW = 0;
+    configButtonMatrix(iolist_Button);
+    //pinSetDir(PORT1, BIT1, 0);
+    //pinConfigInput(PORT1, BIT1, true, true, false, false);
+
+    //configLEDMatrix(iolist_Led);
+    //bool rij[8] = {1,1,1,1,1,1,1,1};
+    //int LED = 00;
+    //int ROW = 0;
 
     //setLed(0,0,true);
     //setLed(6,7,true);
@@ -32,9 +40,13 @@ int main(void) {
     //setLedRow(5, rij);
     //setLedCol(5, rij);
 
+    volatile int buttonValue = 0;
+
     while(1){
-        refreshMatrix();
-/*        switch (LED){                       // Opdracht 25
+        buttonValue = getButton();
+        buttonValue;
+/*        refreshMatrix();
+        switch (LED){                       // Opdracht 25
             case 00: 
                 setMatrix(false);
                 setLed(0,0,true);
@@ -548,8 +560,8 @@ int main(void) {
                 }
                 break;
             default: break;
-        }*/
-/*        switch (ROW){                       // Opdracht 26
+        }
+        switch (ROW){                       // Opdracht 26
             case 0:
                 setLedRow(0, rij);
                 if (pinGet(PORT1, BIT1)==0){
