@@ -1,0 +1,22 @@
+[
+   {
+      "directory" : "C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM\" -I\"C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM/src/main.c"
+   },
+   {
+      "directory" : "C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM\" -I\"C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM/src/button_matrix_lib.c"
+   },
+   {
+      "directory" : "C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM\" -I\"C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM/src/gpio_lib.c"
+   },
+   {
+      "directory" : "C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM\" -I\"C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/matth/source/repos/EDMP1/weekX_ButtonMatrix_PWM/src/led_matrix_lib.c"
+   }
+]
