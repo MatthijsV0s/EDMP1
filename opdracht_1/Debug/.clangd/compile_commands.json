@@ -1,12 +1,12 @@
 [
    {
-      "directory" : "C:/Users/matth/source/repos/EDMP1/opdracht_1/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/source/repos/EDMP1/opdracht_1\" -I\"C:/Users/matth/source/repos/EDMP1/opdracht_1/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/matth/source/repos/EDMP1/opdracht_1/main.c"
+      "directory" : "C:/Users/matth/Firmware/EDMP1/opdracht_1/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2040/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/Firmware/EDMP1/opdracht_1\" -I\"C:/Users/matth/Firmware/EDMP1/opdracht_1/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2040/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/matth/Firmware/EDMP1/opdracht_1/gpio_lib.c"
    },
    {
-      "directory" : "C:/Users/matth/source/repos/EDMP1/opdracht_1/Debug",
-      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/source/repos/EDMP1/opdracht_1\" -I\"C:/Users/matth/source/repos/EDMP1/opdracht_1/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -DDEPRECATED -xc",
-      "file"      : "C:/Users/matth/source/repos/EDMP1/opdracht_1/gpio_lib.c"
+      "directory" : "C:/Users/matth/Firmware/EDMP1/opdracht_1/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2040/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/Firmware/EDMP1/opdracht_1\" -I\"C:/Users/matth/Firmware/EDMP1/opdracht_1/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2040/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/matth/Firmware/EDMP1/opdracht_1/main.c"
    }
 ]
