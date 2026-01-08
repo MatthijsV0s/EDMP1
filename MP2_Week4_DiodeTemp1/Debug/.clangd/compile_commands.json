@@ -1,0 +1,7 @@
+[
+   {
+      "directory" : "C:/Users/matth/source/repos/EDMP1/MP2_Week4_DiodeTemp1/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/source/repos/EDMP1/MP2_Week4_DiodeTemp1\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -xc",
+      "file"      : "C:/Users/matth/source/repos/EDMP1/MP2_Week4_DiodeTemp1/msp430fr59xx_adc12_11.c"
+   }
+]

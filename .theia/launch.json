@@ -107,6 +107,251 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "weekX_ButtonMatrix_PWM",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "weekX_ButtonMatrix_PWM",
+                "resourceId": "/weekX_ButtonMatrix_PWM"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "VoorbeeldAssessment",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "VoorbeeldAssessment",
+                "resourceId": "/VoorbeeldAssessment"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "VoorbeeldAssessment_Op2",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "VoorbeeldAssessment_Op2",
+                "resourceId": "/VoorbeeldAssessment_Op2"
+            }
+        },
+        {
+            "name": "A_Opdracht_2",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "A_Opdracht_2",
+                "resourceId": "/A_Opdracht_2"
+            }
+        },
+        {
+            "name": "Blink_Energy1",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "Blink_Energy1",
+                "resourceId": "/Blink_Energy1"
+            }
+        },
+        {
+            "name": "Blink_Energy2",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "Blink_Energy2",
+                "resourceId": "/Blink_Energy2"
+            }
+        },
+        {
+            "name": "Blink_Energy3",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "Blink_Energy3",
+                "resourceId": "/Blink_Energy3"
+            }
+        },
+        {
+            "name": "lab_04a_clock_solution_msp430fr5969",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lab_04a_clock_solution_msp430fr5969",
+                "resourceId": "/lab_04a_clock_solution_msp430fr5969"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "lab_07c_initPorts_solution_msp430fr5969",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "lab_07c_initPorts_solution_msp430fr5969",
+                "resourceId": "/lab_07c_initPorts_solution_msp430fr5969"
+            }
+        },
+        {
+            "name": "ULP_Case_Study",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ULP_Case_Study",
+                "resourceId": "/ULP_Case_Study"
+            }
+        },
+        {
+            "name": "opdracht_1",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "opdracht_1",
+                "resourceId": "/opdracht_1"
+            }
+        },
+        {
+            "name": "opdracht_2",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "opdracht_2",
+                "resourceId": "/opdracht_2"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "opdracht_3",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "opdracht_3",
+                "resourceId": "/opdracht_3"
+            }
+        },
+        {
+            "name": "MP2_Week3_ADC1",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "MP2_Week3_ADC1",
+                "resourceId": "/MP2_Week3_ADC1"
+            }
+        },
+        {
+            "name": "MP2_Week3_ADCInterrupt",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "MP2_Week3_ADCInterrupt",
+                "resourceId": "/MP2_Week3_ADCInterrupt"
+            }
+        },
+        {
+            "name": "MP2_Week3_ADCInternalRef",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "MP2_Week3_ADCInternalRef",
+                "resourceId": "/MP2_Week3_ADCInternalRef"
+            }
+        },
+        {
+            "name": "MP2_Week4_DiodeTemp1",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "MP2_Week4_DiodeTemp1",
+                "resourceId": "/MP2_Week4_DiodeTemp1"
+            }
+        },
+        {
+            "name": "MP2_Week4_DiodeTemp2",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "MP2_Week4_DiodeTemp2",
+                "resourceId": "/MP2_Week4_DiodeTemp2"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "MP2_Week4_DiodeTemp3",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "MP2_Week4_DiodeTemp3",
+                "resourceId": "/MP2_Week4_DiodeTemp3"
+            }
+        },
+        {
+            "name": "MP2_Week4_DiodeTemp4",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "MP2_Week4_DiodeTemp4",
+                "resourceId": "/MP2_Week4_DiodeTemp4"
+            }
         }
     ]
 }

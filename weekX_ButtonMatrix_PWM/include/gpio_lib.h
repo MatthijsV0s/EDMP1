@@ -61,7 +61,7 @@ bool pinGet(uint16_t port, uint16_t bit);
  * @param[in] bit:          The specific pin to toggle on that port.
  * @param[in] pullResistor: Indicates if the pin gets a pullresistor.
  * @param[in] pullUp:       Indicates which resistor the pin get: 1 Up/0 Down.
- * @param[in] IES:          Indicates on which edge an interrupt is triggerd.
+ * @param[in] IES:          Indicates on which edge an interrupt is triggerd: 1 Falling/0 Rising
  * @param[in] IE:           Indicates if interrupt is enabled.
  *
  */

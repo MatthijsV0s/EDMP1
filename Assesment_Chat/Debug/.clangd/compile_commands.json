@@ -1,0 +1,22 @@
+[
+   {
+      "directory" : "C:/Users/matth/source/repos/EDMP1/Assesment_Chat/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/source/repos/EDMP1/Assesment_Chat\" -I\"C:/Users/matth/source/repos/EDMP1/Assesment_Chat/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/matth/source/repos/EDMP1/Assesment_Chat/ADC.c"
+   },
+   {
+      "directory" : "C:/Users/matth/source/repos/EDMP1/Assesment_Chat/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/source/repos/EDMP1/Assesment_Chat\" -I\"C:/Users/matth/source/repos/EDMP1/Assesment_Chat/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/matth/source/repos/EDMP1/Assesment_Chat/Opdracht1.c"
+   },
+   {
+      "directory" : "C:/Users/matth/source/repos/EDMP1/Assesment_Chat/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/source/repos/EDMP1/Assesment_Chat\" -I\"C:/Users/matth/source/repos/EDMP1/Assesment_Chat/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/matth/source/repos/EDMP1/Assesment_Chat/Opdracht3.c"
+   },
+   {
+      "directory" : "C:/Users/matth/source/repos/EDMP1/Assesment_Chat/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/Users/matth/source/repos/EDMP1/Assesment_Chat\" -I\"C:/Users/matth/source/repos/EDMP1/Assesment_Chat/driverlib/MSP430FR5xx_6xx\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -D_MPU_ENABLE -DDEPRECATED -xc",
+      "file"      : "C:/Users/matth/source/repos/EDMP1/Assesment_Chat/Opdracht2.c"
+   }
+]

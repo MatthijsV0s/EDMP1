@@ -1,0 +1,4 @@
+"./Efficient.obj"
+"../lnk_msp430fr5969.cmd"
+-llibc.a
+-llibmath.a

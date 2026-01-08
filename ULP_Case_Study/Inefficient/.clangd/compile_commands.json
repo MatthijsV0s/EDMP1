@@ -1,0 +1,7 @@
+[
+   {
+      "directory" : "C:/Users/matth/source/repos/EDMP1/ULP_Case_Study/Inefficient",
+      "command"   : "clang++ -I\"C:/ti/ccs2020/ccs/ccs_base/msp430/include\" -I\"C:/ti/ccs2020/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR5969__ -xc",
+      "file"      : "C:/Users/matth/Downloads/slaa603/SLAA603_ULP_Case_Study/Inefficient.c"
+   }
+]

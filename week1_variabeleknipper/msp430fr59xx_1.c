@@ -10,7 +10,7 @@ int main(void)
 
   // Configure GPIO
   P1OUT &= ~0x01;                 // Clear P1.0 output latch for a defined power-on state
-  P4DIR |= BIT6;                  // Set P1.0 to output direction
+  P4DIR |= BIT6;                  // Set P4.6 to output direction
 
   P4DIR &= ~0x20;                 //Set P4.5 as input
   P4REN |= 0x20;
